@@ -29,7 +29,7 @@ local cobalt2 = {
   normal = {
     a = { fg = colors.black, bg = colors.yellow, gui = 'bold' },
     b = { fg = colors.fg, bg = colors.dark_purple },
-    c = { fg = colors.fg, bg = colors.cyan },
+    c = { fg = colors.fg, bg = colors.bg },
     z = { fg = colors.black, bg = colors.yellow },
   },
   visual = { a = { fg = colors.bg, bg = colors.purple, gui = 'bold' } },
