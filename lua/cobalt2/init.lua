@@ -81,20 +81,20 @@ Group.new('PMenuSBar', nil, colors.dark_grey, nil)
 Group.new('PMenuThumb', nil, colors.lightest_grey, nil)
 Group.new('Visual', nil, colors.darker_blue, nil)
 Group.new('Cursor', colors.yellow, colors.cobalt_bg, nil)
-Group.new('CursorColumn', nil, colors.yellow, nil)
+Group.new('CursorColumn', nil, colors.darker_blue, nil)
 Group.new('CursorLine', nil, colors.cursor_line, nil)
 Group.new('CursorLineNr', colors.yellow, nil, styles.bold)
 Group.new('LineNr', colors.blue, colors.cobalt_bg, styles.NONE)
 Group.new('StatusLine', colors.black, colors.lightest_grey, styles.italic)
 Group.new('StatusLineNC', colors.white, colors.darker_grey, styles.italic)
-Group.new('VertSplit', colors.yellow, nil, nil)
+Group.new('VertSplit', colors.grey, nil, nil)
 Group.new('WildMenu', colors.pale_pink, colors.darkest_grey, nil)
 Group.new('Folded', colors.light_grey, colors.darker_grey, styles.italic)
 Group.new('FoldColumn', colors.dark_grey, colors.black, nil)
 Group.new('SignColumn', colors.cobalt_bg, nil, nil)
 Group.new('ColorColumn', nil, colors.black, nil)
 Group.new('Title', colors.dirty_green, nil, styles.bold)
-Group.new('Search', colors.dark_blue, colors.greyish_blue, styles.underline)
+Group.new('Search', colors.black, colors.blue, styles.NONE)
 Group.new('SpellBad', colors.dark_red, nil, styles.underline)
 Group.new('SpellCap', nil, colors.darkest_blue, styles.underline)
 Group.new('SpellRare', nil, colors.aubergine, styles.underline)
@@ -106,7 +106,7 @@ Group.new('IndentBlankLineChar', colors.grey, nil, nil)
 Group.new('BufferCurrent', colors.grey, colors.cobalt_bg, nil)
 
 ---------------------------------------------------------------------------------
---                          plugins highlight groups                           --
+--                          PLUGINS HIGHLIGHT GROUPS                           --
 ---------------------------------------------------------------------------------
 
 -- NOTE:  Neovim Treesitter:
@@ -139,7 +139,7 @@ Group.new('TSField', colors.light_orange, nil, nil)
 Group.new('TSProperty', colors.light_orange, nil, nil)
 Group.new('TSConstructor', colors.light_green, nil, nil)
 -- Keywords
-Group.new('TSConditional', colors.red, nil, nil)
+Group.new('TSConditional', colors.dark_orange, nil, nil)
 Group.new('TSRepeat', colors.red, nil, nil)
 Group.new('TSLabel', colors.yellow, nil, nil)
 Group.new('TSKeyword', colors.yellow, nil, styles.italic)
@@ -165,3 +165,11 @@ Group.new('TSURI', colors.greyish_blue, nil, styles.underline)
 -- Tags
 Group.new('TSTag', colors.yellow, nil, nil)
 Group.new('TSTagDelimiter', colors.dirty_blue, nil, nil)
+
+-- NOTE: startify
+Group.new('StartifyBracket', colors.light_yellow, nil, nil)
+Group.new('StartifyNumber', colors.dark_pink, nil, nil)
+Group.new('Startifyfile', colors.dark_orange, nil, nil)
+Group.new('Startifyheader', colors.green, nil, nil)
+Group.new('Startifypath', colors.dark_blue, nil, nil)
+Group.new('Startifyslash', colors.dark_pink, nil, nil)
