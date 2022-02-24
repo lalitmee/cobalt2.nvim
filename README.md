@@ -2,7 +2,7 @@
 
 # cobalt2.nvim
 
-##### Don't stress on your eyes now
+##### Don't stress your eyes now
 
 [![Lua](https://img.shields.io/badge/Lua-blue.svg?style=for-the-badge&logo=lua)](http://www.lua.org)
 
