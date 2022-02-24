@@ -1,3 +1,6 @@
+-- Copyright (c) 2022-2022 Lalit Kumar
+-- License: MIT
+--
 local colors = {
   cobalt_bg = '#122637',
 

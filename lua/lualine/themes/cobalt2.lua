@@ -3,47 +3,34 @@
 --
 local p = require('cobalt2.palette')
 
-local colors = {
-  bg = p.darker_blue,
-  fg = p.light_orange,
-  red = p.red,
-  green = p.green,
-  yellow = p.yellow,
-  blue = p.blue,
-  dirty_blue = p.drity_blue,
-  purple = p.purple,
-  dark_purple = p.dark_purple,
-  cyan = p.light_blue,
-  grey = p.grey,
-  pink = p.dirty_pink,
-  black = p.black,
-}
-
 local cobalt2 = {
   inactive = {
-    a = { fg = colors.yellow, bg = colors.bg, gui = 'bold' },
-    b = { fg = colors.yellow, bg = colors.bg },
-    c = { fg = colors.yellow, bg = colors.bg },
-    z = { fg = colors.yellow, bg = colors.bg },
+    a = { fg = p.yellow, bg = p.cursor_line, gui = 'bold' },
+    b = { fg = p.yellow, bg = p.cursor_line },
+    c = { fg = p.yellow, bg = p.cursor_line },
+    z = { fg = p.yellow, bg = p.cursor_line },
   },
   normal = {
-    a = { fg = colors.black, bg = colors.yellow, gui = 'bold' },
-    b = { fg = colors.fg, bg = colors.dark_purple },
-    c = { fg = colors.fg, bg = colors.bg },
-    z = { fg = colors.black, bg = colors.yellow },
+    a = { fg = p.darker_blue, bg = p.yellow, gui = 'bold' },
+    b = { fg = p.dark_orange, bg = p.darker_blue },
+    c = { fg = p.light_orange, bg = p.cursor_line },
+    z = { fg = p.black, bg = p.yellow },
   },
-  visual = { a = { fg = colors.bg, bg = colors.purple, gui = 'bold' } },
-  replace = { a = { fg = colors.bg, bg = colors.red, gui = 'bold' } },
-  insert = { a = { fg = colors.bg, bg = colors.blue, gui = 'bold' } },
+  visual = { a = { fg = p.darker_blue, bg = p.dirty_pink, gui = 'bold' } },
+  replace = { a = { fg = p.yellow, bg = p.dark_red, gui = 'bold' } },
+  insert = { a = { fg = p.yellow, bg = p.dirty_blue, gui = 'bold' } },
+  command = { a = { fg = p.light_pink, bg = p.dirty_blue, gui = 'bold' } },
 }
 
 local mt = {}
 function mt:__index(k)
   if k == 'colors' then
-    return colors
+    return p
   end
 end
 
 cobalt2 = setmetatable(cobalt2, mt)
+
+require('lualine').setup { options = { theme = cobalt2 } }
 
 return cobalt2

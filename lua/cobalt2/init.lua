@@ -1,3 +1,6 @@
+-- Copyright (c) 2022-2022 Lalit Kumar
+-- License: MIT
+--
 local Color, colors, Group, groups, styles = require('colorbuddy').setup()
 
 Color.new('cobalt_bg', '#122637')
