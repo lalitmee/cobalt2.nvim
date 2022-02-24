@@ -29,7 +29,7 @@ local cobalt2 = {
     a = { fg = colors.bg, bg = colors.green, gui = 'bold' },
     b = { fg = colors.fg, bg = colors.dark_purple },
     c = { fg = colors.fg, bg = colors.dirty_blue },
-    z = { fg = colors.fg, bg = colors.pink },
+    z = { fg = colors.bg, bg = colors.green },
   },
   visual = { a = { fg = colors.bg, bg = colors.purple, gui = 'bold' } },
   replace = { a = { fg = colors.bg, bg = colors.red, gui = 'bold' } },
