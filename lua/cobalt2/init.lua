@@ -326,3 +326,17 @@ Group.new('GitSignsDelete', colors.red, nil, nil)
 ---------------------------------------------------------------------------------
 Group.new('IndentBlankLineChar', colors.grey, nil, nil)
 Group.new('IndentBlankLineContextChar', colors.yellow, nil, nil)
+
+---------------------------------------------------------------------------------
+--                                  markdown                                   --
+---------------------------------------------------------------------------------
+Group.new('markdownHeadingDelimiter', colors.dark_orange, nil, nil)
+Group.new('markdownCode', colors.dark_blue, nil, nil)
+Group.new('markdownCodeBlock', colors.dark_blue, nil, nil)
+Group.new('markdownLinkText', colors.dark_blue, nil, nil)
+Group.new('markdownH1', colors.yellow, colors.cobalt_bg, nil)
+Group.new('markdownH2', colors.yellow, colors.cobalt_bg, nil)
+Group.new('markdownH3', colors.yellow, colors.cobalt_bg, nil)
+Group.new('markdownH4', colors.yellow, colors.cobalt_bg, nil)
+Group.new('markdownH5', colors.yellow, colors.cobalt_bg, nil)
+Group.new('markdownH6', colors.yellow, colors.cobalt_bg, nil)
