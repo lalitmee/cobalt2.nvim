@@ -4,7 +4,7 @@
 local p = require('cobalt2.palette')
 
 local colors = {
-  bg = p.cobalt_bg,
+  bg = p.darker_blue,
   fg = p.dark_orange,
   red = p.red,
   green = p.green,
