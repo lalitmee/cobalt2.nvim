@@ -14,8 +14,6 @@ cobalt2 theme for neovim in lua using [tjdevries/colorbuddy](https://github.com/
 
 ## Features
 
-hello
-
 - Support for the following plugins:
   - [Git Gutter](https://github.com/airblade/vim-gitgutter)
   - [Git signs](https://github.com/lewis6991/gitsigns.nvim)
