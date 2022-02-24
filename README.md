@@ -12,6 +12,24 @@ cobalt2 theme for neovim in lua using [tjdevries/colorbuddy](https://github.com/
 
 ![show case image](./media/show.png 'cobalt2 theme for lua and javascript')
 
+## Features
+
+- Support for the following plugins:
+  - [Git Gutter](https://github.com/airblade/vim-gitgutter)
+  - [Git signs](https://github.com/lewis6991/gitsigns.nvim)
+  - [Hop](https://github.com/phaazon/hop.nvim)
+  - [Indent Blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+  - [Lualine](https://github.com/hoob3rt/lualine.nvim)
+  - [Neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim)
+  - [Neogit](https://github.com/TimUntersberger/neogit)
+  - [Notify](https://github.com/rcarriga/nvim-notify)
+  - [Nvim-ts-Rainbow](https://github.com/p00f/nvim-ts-rainbow)
+  - [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
+  - [Sneak](https://github.com/justinmk/vim-sneak)
+  - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
+  - [Treesitter](https://github.com/tree-sitter/tree-sitter)
+  - [WhichKey](https://github.com/folke/which-key.nvim)
+
 ## Installation
 
 ```lua

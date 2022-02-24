@@ -105,7 +105,6 @@ Group.new('SpellLocal', nil, colors.darkest_green, styles.underline)
 Group.new('DiffDelete', colors.black, colors.darker_red, nil)
 Group.new('DiffChange', nil, colors.darkest_green, nil)
 Group.new('DiffText', colors.greyish_blue, colors.black, nil)
-Group.new('IndentBlankLineChar', colors.grey, nil, nil)
 Group.new('BufferCurrent', colors.grey, colors.cobalt_bg, nil)
 
 ---------------------------------------------------------------------------------
@@ -197,9 +196,9 @@ Group.new('BufferLineSeparator', colors.grey, nil, nil)
 Group.new('BufferLineSeparatorVisible', colors.grey, nil, nil)
 Group.new('BufferLineSeparatorSelected', colors.dark_pink, nil, nil)
 -- close buttons
-Group.new('BufferLineCloseButton', colors.red, nil, styles.bold)
+Group.new('BufferLineCloseButton', colors.light_pink, nil, styles.bold)
 Group.new('BufferLineCloseButtonVisible', colors.red, nil, styles.bold)
-Group.new('BufferLineCloseButtonSelected', colors.dark_pink, nil, styles.bold)
+Group.new('BufferLineCloseButtonSelected', colors.red, nil, styles.bold)
 
 ---------------------------------------------------------------------------------
 --                                  nvim-tree                                  --
@@ -320,3 +319,9 @@ Group.new('HopUnmatched', colors.light_grey, nil, nil)
 Group.new('GitSignsAdd', colors.green, nil, nil)
 Group.new('GitSignsChange', colors.yellow, nil, nil)
 Group.new('GitSignsDelete', colors.red, nil, nil)
+
+---------------------------------------------------------------------------------
+--                              indent-blankline                               --
+---------------------------------------------------------------------------------
+Group.new('IndentBlankLineChar', colors.grey, nil, nil)
+Group.new('IndentBlankLineContextChar', colors.yellow, nil, nil)
