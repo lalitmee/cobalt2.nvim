@@ -4,7 +4,7 @@
 local p = require('cobalt2.palette')
 
 local colors = {
-  bg = p.greyish_blue,
+  bg = p.darker_blue,
   fg = p.light_orange,
   red = p.red,
   green = p.green,
@@ -21,10 +21,10 @@ local colors = {
 
 local cobalt2 = {
   inactive = {
-    a = { fg = colors.grey, bg = colors.bg, gui = 'bold' },
-    b = { fg = colors.grey, bg = colors.bg },
-    c = { fg = colors.grey, bg = colors.bg },
-    z = { fg = colors.grey, bg = colors.bg },
+    a = { fg = colors.yellow, bg = colors.bg, gui = 'bold' },
+    b = { fg = colors.yellow, bg = colors.bg },
+    c = { fg = colors.yellow, bg = colors.bg },
+    z = { fg = colors.yellow, bg = colors.bg },
   },
   normal = {
     a = { fg = colors.black, bg = colors.yellow, gui = 'bold' },
