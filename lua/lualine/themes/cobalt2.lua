@@ -11,15 +11,15 @@ local cobalt2 = {
     z = { fg = p.yellow, bg = p.cursor_line },
   },
   normal = {
-    a = { fg = p.darker_blue, bg = p.yellow, gui = 'bold' },
-    b = { fg = p.dark_pink, bg = p.darker_blue },
-    c = { fg = p.light_orange, bg = p.cursor_line },
+    a = { fg = p.black, bg = p.yellow, gui = 'bold' },
+    b = { fg = p.yellow, bg = p.darker_blue },
+    c = { fg = p.yellow, bg = p.cursor_line },
     z = { fg = p.black, bg = p.yellow },
   },
-  visual = { a = { fg = p.darker_blue, bg = p.dirty_pink, gui = 'bold' } },
-  replace = { a = { fg = p.yellow, bg = p.dark_red, gui = 'bold' } },
-  insert = { a = { fg = p.yellow, bg = p.dirty_blue, gui = 'bold' } },
-  command = { a = { fg = p.yellow, bg = p.dark_blue, gui = 'bold' } },
+  visual = { a = { fg = p.black, bg = p.dirty_pink, gui = 'bold' } },
+  replace = { a = { fg = p.black, bg = p.dark_red, gui = 'bold' } },
+  insert = { a = { fg = p.black, bg = p.dirty_blue, gui = 'bold' } },
+  command = { a = { fg = p.black, bg = p.dark_blue, gui = 'bold' } },
 }
 
 local mt = {}
