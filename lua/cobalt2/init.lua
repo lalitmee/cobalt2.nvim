@@ -315,8 +315,8 @@ Group.new('NotifyTRACETitle', colors.green, nil, nil)
 ---------------------------------------------------------------------------------
 --                                 quick-scope                                 --
 ---------------------------------------------------------------------------------
-Group.new('QuickScopePrimary', colors.pink, nil, nil)
-Group.new('QuickScopeSecondary', colors.red, nil, nil)
+-- Group.new('QuickScopePrimary', colors.pink, nil, nil)
+-- Group.new('QuickScopeSecondary', colors.red, nil, nil)
 
 ---------------------------------------------------------------------------------
 --                                     hop                                     --
