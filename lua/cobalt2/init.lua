@@ -1,19 +1,10 @@
 -- Copyright (c) 2022-2022 Lalit Kumar
 -- License: MIT
 --
-local Color, colors, Group, groups, styles = require('colorbuddy').setup()
-
--- Color.new('yellow', ' #ffc600')
--- Color.new('orange', ' #ff9d00')
--- Color.new('mint', ' #2affdf')
--- Color.new('blue', ' #193549')
--- Color.new('off_blue', ' #0d3a58')
--- Color.new('dusty_blue', ' #35434d')
--- Color.new('dark_blue', ' #15232d')
--- Color.new('pink', ' #fb94ff')
--- Color.new('light_blue', ' #9effff')
--- Color.new('dark_green', ' #3ad900')
--- Color.new('light_green', ' #a5ff90')
+local colors = require('colorbuddy.color').colors
+local Color = require('colorbuddy.color').Color
+local styles = require('colorbuddy.style').styles
+local Group = require('colorbuddy.group').Group
 
 Color.new('black', '#1C1C1C')
 Color.new('darkest_grey', '#3A3A3A')
@@ -63,6 +54,7 @@ Color.new('dirty_pink', '#EB939A')
 
 -- custom colors
 Color.new('cursor_line', '#0d3a58')
+Color.new('cursor_hover', '#185294')
 
 Group.new('Normal', colors.white, colors.cobalt_bg, nil)
 Group.new('Comment', colors.dark_blue, nil, styles.italic)
@@ -96,7 +88,7 @@ Group.new('PMenuSBar', nil, colors.dark_grey, nil)
 Group.new('PMenuThumb', nil, colors.lightest_grey, nil)
 Group.new('Visual', nil, colors.darker_blue, nil)
 Group.new('Cursor', colors.yellow, colors.cobalt_bg, nil)
-Group.new('CursorColumn', nil, colors.darker_blue, nil)
+Group.new('CursorColumn', nil, colors.cursor_hover, nil)
 Group.new('CursorLine', nil, colors.cursor_line, nil)
 Group.new('CursorLineNr', colors.yellow, nil, styles.bold)
 Group.new('LineNr', colors.light_grey, colors.cobalt_bg, styles.NONE)
@@ -173,8 +165,8 @@ Group.new('TSVariable', colors.white, nil, nil)
 Group.new('TSVariableBuiltin', colors.yellow, nil, nil)
 -- Text
 Group.new('TSText', colors.white, nil, nil)
-Group.new('TSStrong', colors.white, nil, nil)
-Group.new('TSEmphasis', colors.white, nil, nil)
+Group.new('TSStrong', colors.white, nil, styles.bold)
+Group.new('TSEmphasis', colors.white, nil, styles.italic)
 Group.new('TSUnderline', colors.white, nil, styles.underline)
 Group.new('TSTitle', colors.dirty_green, nil, nil)
 Group.new('TSLiteral', colors.green, nil, nil)
@@ -188,7 +180,7 @@ Group.new('TSTagDelimiter', colors.dirty_blue, nil, nil)
 ---------------------------------------------------------------------------------
 Group.new('StartifyBracket', colors.blue, nil, nil)
 Group.new('StartifyNumber', colors.dark_pink, nil, nil)
-Group.new('Startifyfile', colors.blue, nil, nil)
+Group.new('Startifyfile', colors.light_green, nil, nil)
 Group.new('Startifyheader', colors.dark_pink, nil, nil)
 Group.new('Startifypath', colors.yellow, nil, nil)
 Group.new('Startifyslash', colors.blue, nil, nil)
@@ -249,10 +241,18 @@ Group.new('NeoTreeFileNameOpened', colors.yellow, nil, nil)
 ---------------------------------------------------------------------------------
 --                                  telescope                                  --
 ---------------------------------------------------------------------------------
-Group.new('TelescopeBorder', colors.darker_blue, nil, nil)
-Group.new('TelescopeSelectionCaret', colors.dark_orange, colors.dark_purple, nil)
-Group.new('TelescopeSelection', colors.yellow, colors.dark_purple, nil)
+Group.new('TelescopeBorder', colors.yellow, nil, nil)
 Group.new('TelescopeMatching', colors.blue, nil, nil)
+Group.new('TelescopeMultiSelection', colors.dark_pink, nil, nil)
+Group.new('TelescopeNormal', colors.white, nil, nil)
+Group.new('TelescopePreviewBorder', colors.blue, nil, nil)
+Group.new('TelescopePrompt', colors.yellow, nil, nil)
+Group.new('TelescopePromptBorder', colors.blue, nil, nil)
+Group.new('TelescopePromptPrefix', colors.dark_orange, nil, nil)
+Group.new('TelescopeResultsBorder', colors.blue, nil, nil)
+Group.new('TelescopeSelection', colors.light_orange, colors.cursor_hover, nil)
+Group.new('TelescopeSelectionCaret', colors.dark_orange, colors.cursor_hover,
+          nil)
 
 ---------------------------------------------------------------------------------
 --                                   neogit                                    --
@@ -291,7 +291,7 @@ Group.new('rainbowcol3', colors.green, nil, nil)
 Group.new('rainbowcol4', colors.blue, nil, nil)
 Group.new('rainbowcol5', colors.purple, nil, nil)
 Group.new('rainbowcol6', colors.yellow, nil, nil)
-Group.new('rainbowcol7', colors.red, nil, nil)
+Group.new('rainbowcol7', colors.dirty_pink, nil, nil)
 
 ---------------------------------------------------------------------------------
 --                                 nvim-notify                                 --
@@ -302,9 +302,9 @@ Group.new('NotifyERRORTitle', colors.red, nil, nil)
 Group.new('NotifyWARNBorder', colors.dark_orange, nil, nil)
 Group.new('NotifyWARNIcon', colors.dark_orange, nil, nil)
 Group.new('NotifyWARNTitle', colors.dark_orange, nil, nil)
-Group.new('NotifyINFOBorder', colors.dark_blue, nil, nil)
-Group.new('NotifyINFOIcon', colors.dark_blue, nil, nil)
-Group.new('NotifyINFOTitle', colors.dark_blue, nil, nil)
+Group.new('NotifyINFOBorder', colors.light_blue, nil, nil)
+Group.new('NotifyINFOIcon', colors.light_blue, nil, nil)
+Group.new('NotifyINFOTitle', colors.light_blue, nil, nil)
 Group.new('NotifyDEBUGBorder', colors.dark_pink, nil, nil)
 Group.new('NotifyDEBUGIcon', colors.dark_pink, nil, nil)
 Group.new('NotifyDEBUGTitle', colors.dark_pink, nil, nil)
@@ -336,8 +336,19 @@ Group.new('GitSignsDelete', colors.red, nil, nil)
 ---------------------------------------------------------------------------------
 --                              indent-blankline                               --
 ---------------------------------------------------------------------------------
-Group.new('IndentBlankLineChar', colors.darker_grey, nil, nil)
-Group.new('IndentBlankLineContextChar', colors.dark_pink, nil, nil)
+Group.new('IndentBlankLineChar', colors.darker_grey:light(), nil, nil)
+Group.new('IndentBlankLineContextChar', colors.yellow, nil, nil)
+
+---------------------------------------------------------------------------------
+--                                  coc.nvim                                   --
+---------------------------------------------------------------------------------
+Group.new('CocFadeOut', colors.lightest_grey, nil, nil)
+
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+--                              LANGUAGES SUPPORT                              --
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------
 --                                  markdown                                   --
@@ -354,6 +365,44 @@ Group.new('markdownH5', colors.yellow, colors.cobalt_bg, nil)
 Group.new('markdownH6', colors.yellow, colors.cobalt_bg, nil)
 
 ---------------------------------------------------------------------------------
---                                  coc.nvim                                   --
+--                                    json                                     --
 ---------------------------------------------------------------------------------
--- Group.new('CocSymbolFunction', colors.dark_orange, nil, nil)
+Group.new('jsonKeyword', colors.yellow, nil, nil)
+Group.new('jsonEscape', colors.yellow, nil, nil)
+Group.new('jsonNull', colors.dark_pink, nil, styles.italic)
+Group.new('jsonBoolean', colors.dark_pink, nil, styles.italic)
+
+---------------------------------------------------------------------------------
+--                                    html                                     --
+---------------------------------------------------------------------------------
+Group.new('htmlTag', colors.white, nil, nil)
+Group.new('htmlTagName', colors.light_blue, nil, nil)
+Group.new('htmlArg', colors.yellow, nil, nil)
+Group.new('htmlEndTag', colors.white, nil, nil)
+Group.new('htmlSpecialTagName', colors.light_blue, nil, nil)
+
+---------------------------------------------------------------------------------
+--                                 javascript                                  --
+---------------------------------------------------------------------------------
+Group.new('jsVariableDef', colors.white, nil, nil)
+Group.new('jsFuncArgs', colors.light_blue, nil, nil)
+Group.new('jsFuncBlock', colors.light_blue, nil, nil)
+Group.new('jsRegexpString', colors.green, nil, nil)
+Group.new('jsThis', colors.blue, nil, nil)
+Group.new('jsOperatorKeyword', colors.dark_pink, nil, nil)
+Group.new('jsDestructuringBlock', colors.light_blue, nil, nil)
+Group.new('jsObjectKey', colors.light_green, nil, nil)
+Group.new('jsGlobalObjects', colors.white, nil, nil)
+Group.new('jsModuleKeyword', colors.yellow, nil, nil)
+Group.new('jsClassDefinition', colors.yellow, nil, nil)
+Group.new('jsClassKeyword', colors.dark_orange, nil, nil)
+Group.new('jsExtendsKeyword', colors.dark_orange, nil, nil)
+Group.new('jsExportDefault', colors.yellow, nil, nil)
+Group.new('jsFuncCall', colors.yellow, nil, nil)
+Group.new('jsObjectValue', colors.light_blue, nil, nil)
+Group.new('jsParen', colors.light_blue, nil, nil)
+Group.new('jsObjectProp', colors.white, nil, nil)
+Group.new('jsIfElseBlock', colors.light_blue, nil, nil)
+Group.new('jsParenIfElse', colors.white, nil, nil)
+Group.new('jsSpreadOperator', colors.dark_orange, nil, nil)
+Group.new('jsSpreadExpression', colors.white, nil, nil)

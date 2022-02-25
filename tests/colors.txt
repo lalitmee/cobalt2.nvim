@@ -1,0 +1,98 @@
+// colors being used in cobalt2-vscode
+
+#000000
+#003b8b
+#0050A4
+#0050A480
+#0088ff
+#027dff
+#0d3a58
+#122738
+#12273866
+#12273899
+#15232d
+#185294
+#193549
+#19354900
+#1F4662
+#1F466280
+#234E6D
+#243E51
+#26506D
+#2F7366
+#355166cc
+#3B5364
+#3B536433
+#3C9F4A
+#3ad900
+#3ad90033
+#3ad90055
+#406179cc
+#808080
+#80fcff
+#80ffbb
+#8dffff
+#92fc79
+#9EFFFF
+#9effff
+#A22929
+#A5FF90
+#CAD40F66
+#FF68B8
+#FF7200
+#FF720066
+#FFB454
+#a5ff90
+#aaaaaa
+#c97d0c
+#ccc
+#e1efff
+#ee3a4355
+#f44542
+#fb94ff
+#ff0088
+#ff628c
+#ff9d00
+#ffc600
+#ffc60033
+#ffc60055
+#ffc60080
+#ffee80
+#ffffff
+#ffffff00
+#ffffff21
+#ffffff33
+#ffffff52
+
+
+-- Color.new('black', ' #000000')
+-- Color.new('black_blue', '#122738')
+-- Color.new('blue', ' #193549')
+-- Color.new('comment_blue', '#0088ff')
+-- Color.new('dark_blue', ' #15232d')
+-- Color.new('dark_green', '#3c9f4a')
+-- Color.new('dark_orange', ' #ff7200')
+-- Color.new('dark_pink', ' #ff628c')
+-- Color.new('dark_red', ' #f44542 ')
+-- Color.new('darker_orange', ' #c97d0c')
+-- Color.new('darkest_blue', '#0050a4')
+-- Color.new('dirty_pink', ' #ff68b8')
+-- Color.new('dirty_yellow', ' #cad40f')
+-- Color.new('dusty_blue', ' #35434d')
+-- Color.new('green', ' #3ad900')
+-- Color.new('grey', ' #aaaaaa')
+-- Color.new('light_blue', ' #9effff')
+-- Color.new('light_green', ' #a5ff90')
+-- Color.new('light_grey', ' #e1efff')
+-- Color.new('light_mint', ' #9effff')
+-- Color.new('light_pink', ' #fb94ff')
+-- Color.new('light_red', '#ee3a43')
+-- Color.new('light_yellow', ' #ffee80')
+-- Color.new('lighter_green', ' #80ffbb')
+-- Color.new('mint', ' #2affdf')
+-- Color.new('off_blue', ' #0d3a58')
+-- Color.new('orange', ' #ff9d00')
+-- Color.new('pink', ' #ff0088')
+-- Color.new('red', ' #a22929')
+-- Color.new('white', ' #ffffff')
+-- Color.new('yellow', ' #ffc600')
