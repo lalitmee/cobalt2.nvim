@@ -105,7 +105,7 @@ Group.new('WildMenu', colors.pale_pink, colors.darkest_grey, nil)
 Group.new('Folded', colors.light_grey, colors.cursor_line, styles.italic)
 Group.new('FoldColumn', colors.dark_grey, colors.black, nil)
 Group.new('SignColumn', colors.cobalt_bg, nil, nil)
-Group.new('ColorColumn', nil, colors.dark_pink, nil)
+Group.new('ColorColumn', colors.yellow, colors.cobalt_bg, nil)
 Group.new('Title', colors.dirty_green, nil, styles.bold)
 Group.new('Search', colors.black, colors.blue, styles.NONE)
 Group.new('SpellBad', colors.dark_red, nil, styles.underline)
@@ -116,6 +116,8 @@ Group.new('DiffDelete', colors.black, colors.darker_red, nil)
 Group.new('DiffChange', nil, colors.darkest_green, nil)
 Group.new('DiffText', colors.greyish_blue, colors.black, nil)
 Group.new('BufferCurrent', colors.grey, colors.cobalt_bg, nil)
+Group.new('FloatBorder', colors.blue, nil, nil)
+Group.new('NormalFloat', colors.blue, colors.cobalt_bg, nil)
 
 ---------------------------------------------------------------------------------
 --                          PLUGINS HIGHLIGHT GROUPS                           --
@@ -281,11 +283,11 @@ Group.new('GitGutterDelete', colors.red, nil, nil)
 ---------------------------------------------------------------------------------
 --                                  which-key                                  --
 ---------------------------------------------------------------------------------
-Group.new('WhichKey', colors.light_blue, nil, nil)
+Group.new('WhichKey', colors.dark_pink, nil, nil)
 Group.new('WhichKeyGroup', colors.blue, nil, styles.italic)
 Group.new('WhichKeyDesc', colors.yellow, nil, nil)
 Group.new('WhichKeySeparator', colors.green, nil, nil)
-Group.new('WhichKeyFloat', colors.cursor_line, nil, nil)
+Group.new('WhichKeyFloat', colors.blue, nil, nil)
 Group.new('WhichKeyValue', colors.cursor_hover, nil, nil)
 
 ---------------------------------------------------------------------------------
@@ -363,12 +365,12 @@ Group.new('markdownHeadingDelimiter', colors.dark_orange, nil, nil)
 Group.new('markdownCode', colors.dark_blue, nil, nil)
 Group.new('markdownCodeBlock', colors.dark_blue, nil, nil)
 Group.new('markdownLinkText', colors.dark_blue, nil, nil)
-Group.new('markdownH1', colors.yellow, colors.cobalt_bg, nil)
-Group.new('markdownH2', colors.yellow, colors.cobalt_bg, nil)
-Group.new('markdownH3', colors.yellow, colors.cobalt_bg, nil)
-Group.new('markdownH4', colors.yellow, colors.cobalt_bg, nil)
-Group.new('markdownH5', colors.yellow, colors.cobalt_bg, nil)
-Group.new('markdownH6', colors.yellow, colors.cobalt_bg, nil)
+Group.new('markdownH1', colors.yellow, nil, nil)
+Group.new('markdownH2', colors.yellow, nil, nil)
+Group.new('markdownH3', colors.yellow, nil, nil)
+Group.new('markdownH4', colors.yellow, nil, nil)
+Group.new('markdownH5', colors.yellow, nil, nil)
+Group.new('markdownH6', colors.yellow, nil, nil)
 
 ---------------------------------------------------------------------------------
 --                                    json                                     --
@@ -425,6 +427,7 @@ Group.new('DiagnosticUnderlineError', colors.red:light():light(), nil,
 Group.new('DiagnosticUnderlineWarn', colors.yellow, nil, styles.underline)
 Group.new('DiagnosticUnderlineInfo', colors.blue, nil, styles.underline)
 Group.new('DiagnosticUnderlineHint', colors.pink, nil, styles.underline)
+Group.new('LspFloatWinNormal', colors.yellow, colors.cobalt_bg, nil)
 
 ---------------------------------------------------------------------------------
 --                                  nvim-cmp                                   --
@@ -444,3 +447,23 @@ Group.new('CmpItemKindUnit', colors.green, nil, nil)
 Group.new('CmpItemKindConstructor', colors.yellow, nil, nil)
 Group.new('CmpItemAbbrDeprecated', colors.red, nil, nil)
 Group.new('CmpItemAbbrMatch', colors.yellow, nil, styles.bold)
+
+---------------------------------------------------------------------------------
+--                                 packer.nvim                                 --
+---------------------------------------------------------------------------------
+Group.new('packerStatusSuccess', colors.yellow, nil, styles.italic)
+Group.new('packerWorking', colors.light_grey, nil, styles.italic)
+Group.new('packerStatusFail', colors.red:light(), colors.darker_blue:dark(),
+          styles.italic)
+Group.new('packerFail', colors.red:light(), colors.darker_blue:dark(),
+          styles.italic)
+Group.new('packerStatusWarning', colors.light_yellow, nil, styles.italic)
+Group.new('packerStatusInfo', colors.light_blue, nil, styles.italic)
+
+---------------------------------------------------------------------------------
+--                              package-info.nvim                              --
+---------------------------------------------------------------------------------
+Group.new('PackageInfoOutdatedVersion', colors.dark_pink:light():light(), nil,
+          nil)
+Group.new('PackageInfoUptoDateVersion', colors.light_grey:dark():dark(), nil,
+          nil)
