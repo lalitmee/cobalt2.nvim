@@ -30,7 +30,9 @@ cobalt2 theme for neovim in lua using [tjdevries/colorbuddy](https://github.com/
   - [tree-sitter](https://github.com/tree-sitter/tree-sitter)
   - [which-key.nvim](https://github.com/folke/which-key.nvim)
 
-## Screenshots
+<details>
+
+<summary>Screenshots</summary>
 
 - telescope.nvim
 
@@ -50,6 +52,8 @@ cobalt2 theme for neovim in lua using [tjdevries/colorbuddy](https://github.com/
   ![lualine visual](./media/lualine_visual.png 'support for lualine.nvim')
   ![lualine command](./media/lualine_command.png 'support for lualine.nvim')
   ![lualine replace](./media/lualine_replace.png 'support for lualine.nvim')
+
+</details>
 
 ## Installation
 
