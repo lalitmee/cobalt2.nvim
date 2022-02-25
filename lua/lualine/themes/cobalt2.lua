@@ -13,7 +13,7 @@ local cobalt2 = {
   normal = {
     a = { fg = p.black, bg = p.yellow, gui = 'bold' },
     b = { fg = p.yellow, bg = p.darker_blue },
-    c = { fg = p.yellow, bg = p.cursor_line },
+    c = { fg = p.white, bg = p.cursor_line },
     z = { fg = p.black, bg = p.yellow },
   },
   visual = { a = { fg = p.black, bg = p.dirty_pink, gui = 'bold' } },
@@ -32,6 +32,6 @@ end
 cobalt2 = setmetatable(cobalt2, mt)
 
 -- -- NOTE: for testing I have this here, was not able to set use_local for packer
--- require('lualine').setup { options = { theme = cobalt2 } }
+require('lualine').setup { options = { theme = cobalt2 } }
 
 return cobalt2

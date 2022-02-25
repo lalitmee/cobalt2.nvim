@@ -117,7 +117,7 @@ Group.new('DiffChange', nil, colors.darkest_green, nil)
 Group.new('DiffText', colors.greyish_blue, colors.black, nil)
 Group.new('BufferCurrent', colors.grey, colors.cobalt_bg, nil)
 Group.new('FloatBorder', colors.blue, nil, nil)
-Group.new('NormalFloat', colors.blue, colors.cobalt_bg, nil)
+Group.new('NormalFloat', colors.white, colors.cobalt_bg:dark(), nil)
 
 ---------------------------------------------------------------------------------
 --                          PLUGINS HIGHLIGHT GROUPS                           --
@@ -451,12 +451,10 @@ Group.new('CmpItemAbbrMatch', colors.yellow, nil, styles.bold)
 ---------------------------------------------------------------------------------
 --                                 packer.nvim                                 --
 ---------------------------------------------------------------------------------
-Group.new('packerStatusSuccess', colors.yellow, nil, styles.italic)
+Group.new('packerStatusSuccess', colors.dark_orange, nil, styles.italic)
 Group.new('packerWorking', colors.light_grey, nil, styles.italic)
-Group.new('packerStatusFail', colors.red:light(), colors.darker_blue:dark(),
-          styles.italic)
-Group.new('packerFail', colors.red:light(), colors.darker_blue:dark(),
-          styles.italic)
+Group.new('packerStatusFail', colors.red:light(), nil, styles.italic)
+Group.new('packerFail', colors.red:light(), nil, styles.italic)
 Group.new('packerStatusWarning', colors.light_yellow, nil, styles.italic)
 Group.new('packerStatusInfo', colors.light_blue, nil, styles.italic)
 
