@@ -455,8 +455,6 @@ Group.new('packerStatusSuccess', colors.dark_orange, nil, styles.italic)
 Group.new('packerWorking', colors.light_grey, nil, styles.italic)
 Group.new('packerStatusFail', colors.red:light(), nil, styles.italic)
 Group.new('packerFail', colors.red:light(), nil, styles.italic)
-Group.new('packerStatusWarning', colors.light_yellow, nil, styles.italic)
-Group.new('packerStatusInfo', colors.light_blue, nil, styles.italic)
 
 ---------------------------------------------------------------------------------
 --                              package-info.nvim                              --
