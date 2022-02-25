@@ -2,7 +2,7 @@
 -- License: MIT
 --
 local colors = {
-  cobalt_bg = '#122637',
+  cobalt_bg = '#193549',
 
   -- black, white and grey
   black = '#1C1C1C',
@@ -58,7 +58,7 @@ local colors = {
   dirty_pink = '#EB939A',
 
   -- cursor line
-  cursor_line = '#2a3c4b',
+  cursor_line = '#0d3a58',
 }
 
 return colors
