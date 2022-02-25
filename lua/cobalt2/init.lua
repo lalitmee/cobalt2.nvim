@@ -45,6 +45,7 @@ Color.new('aubergine', '#4F0037')
 Color.new('darker_red', '#700009')
 Color.new('dark_red', '#902020')
 Color.new('red', '#FF0000')
+
 Color.new('dark_pink', '#FF628C')
 Color.new('pink', '#FF00FF')
 Color.new('light_pink', '#EE80E1')
@@ -56,6 +57,11 @@ Color.new('dirty_pink', '#EB939A')
 Color.new('cursor_line', '#0d3a58')
 Color.new('cursor_hover', '#185294')
 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+--                              highlight groups                               --
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
 Group.new('Normal', colors.white, colors.cobalt_bg, nil)
 Group.new('Comment', colors.dark_blue, nil, styles.italic)
 Group.new('Todo', colors.dark_blue, nil, styles.bold)
@@ -82,7 +88,7 @@ Group.new('StorageClass', colors.light_orange, nil, nil)
 Group.new('TabLine', colors.black, colors.lighter_grey, styles.italic)
 Group.new('TabLineFill', colors.light_grey, nil, nil)
 Group.new('TabLineSel', colors.black, colors.yellow, styles.bold)
-Group.new('PMenu', colors.lightest_grey, colors.darkest_grey, nil)
+Group.new('PMenu', colors.lightest_grey, colors.cobalt_bg:dark(), nil)
 Group.new('PMenuSel', colors.darkest_grey, colors.yellow, nil)
 Group.new('PMenuSBar', nil, colors.dark_grey, nil)
 Group.new('PMenuThumb', nil, colors.lightest_grey, nil)
@@ -119,26 +125,26 @@ Group.new('BufferCurrent', colors.grey, colors.cobalt_bg, nil)
 --                               nvim-treesitter                               --
 ---------------------------------------------------------------------------------
 Group.new('TSError', colors.dark_red, nil, nil)
-Group.new('TSPunctDelimiter', colors.dirty_blue, nil, nil)
-Group.new('TSPunctBracket', colors.dirty_blue, nil, nil)
-Group.new('TSPunctSpecial', colors.dirty_blue, nil, nil)
+Group.new('TSPunctDelimiter', colors.white, nil, nil)
+Group.new('TSPunctBracket', colors.white, nil, nil)
+Group.new('TSPunctSpecial', colors.white, nil, nil)
 -- Constant
-Group.new('TSConstant', colors.yellow, nil, nil)
+Group.new('TSConstant', colors.white, nil, nil)
 Group.new('TSConstBuiltin', colors.dark_pink, nil, styles.italic)
 Group.new('TSConstMacro', colors.light_blue, nil, nil)
 Group.new('TSStringRegex', colors.green, nil, nil)
 Group.new('TSString', colors.light_green, nil, nil)
 Group.new('TSStringEscape', colors.darker_red, nil, nil)
 Group.new('TSCharacter', colors.dark_red, nil, nil)
-Group.new('TSNumber', colors.light_pink, nil, nil)
-Group.new('TSBoolean', colors.light_pink, nil, styles.italic)
-Group.new('TSFloat', colors.light_pink, nil, nil)
+Group.new('TSNumber', colors.dark_pink, nil, nil)
+Group.new('TSBoolean', colors.dark_pink, nil, styles.italic)
+Group.new('TSFloat', colors.dark_pink, nil, nil)
 Group.new('TSAnnotation', colors.yellow, nil, nil)
 Group.new('TSAttribute', colors.yellow, nil, nil)
 Group.new('TSNamespace', colors.white, nil, styles.italic)
 -- Functions
 Group.new('TSFuncBuiltin', colors.dark_orange, nil, nil)
-Group.new('TSFunction', colors.yellow, nil, nil)
+Group.new('TSFunction', colors.dark_orange, nil, nil)
 Group.new('TSFuncMacro', colors.light_orange, nil, nil)
 Group.new('TSParameter', colors.light_orange, nil, nil)
 Group.new('TSParameterReference', colors.light_orange, nil, nil)
@@ -148,9 +154,9 @@ Group.new('TSProperty', colors.light_blue, nil, styles.italic)
 Group.new('TSConstructor', colors.light_green, nil, nil)
 -- Keywords
 Group.new('TSConditional', colors.dark_orange, nil, nil)
-Group.new('TSRepeat', colors.red, nil, nil)
+Group.new('TSRepeat', colors.dark_orange, nil, nil)
 Group.new('TSLabel', colors.yellow, nil, nil)
-Group.new('TSKeyword', colors.yellow, nil, styles.italic)
+Group.new('TSKeyword', colors.dark_orange, nil, styles.italic)
 Group.new('TSKeywordFunction', colors.light_pink, nil,
           styles.bold + styles.italic)
 Group.new('TSKeywordOperator', colors.yellow, nil, nil)
@@ -406,3 +412,35 @@ Group.new('jsIfElseBlock', colors.light_blue, nil, nil)
 Group.new('jsParenIfElse', colors.white, nil, nil)
 Group.new('jsSpreadOperator', colors.dark_orange, nil, nil)
 Group.new('jsSpreadExpression', colors.white, nil, nil)
+
+---------------------------------------------------------------------------------
+--                                     LSP                                     --
+---------------------------------------------------------------------------------
+Group.new('DiagnosticError', colors.red:light(), nil, nil)
+Group.new('DiagnosticWarn', colors.light_yellow, nil, nil)
+Group.new('DiagnosticInfo', colors.light_blue, nil, nil)
+Group.new('DiagnosticHint', colors.light_pink, nil, nil)
+Group.new('DiagnosticUnderlineError', colors.red:light():light(), nil,
+          styles.underline)
+Group.new('DiagnosticUnderlineWarn', colors.yellow, nil, styles.underline)
+Group.new('DiagnosticUnderlineInfo', colors.blue, nil, styles.underline)
+Group.new('DiagnosticUnderlineHint', colors.pink, nil, styles.underline)
+
+---------------------------------------------------------------------------------
+--                                  nvim-cmp                                   --
+---------------------------------------------------------------------------------
+Group.new('CmpItemKindVariable', colors.white, nil, nil)
+Group.new('CmpItemKindInterface', colors.dark_pink, nil, nil)
+Group.new('CmpItemKindText', colors.light_green, nil, nil)
+Group.new('CmpItemKindFunction', colors.light_pink, nil, nil)
+Group.new('CmpItemKindMethod', colors.dark_orange, nil, nil)
+Group.new('CmpItemKindKeyword', colors.yellow, nil, nil)
+Group.new('CmpItemKindProperty', colors.light_blue, nil, nil)
+Group.new('CmpItemKindSnippet', colors.light_grey, nil, nil)
+Group.new('CmpItemKindField', colors.light_blue, nil, nil)
+Group.new('CmpItemKindModule', colors.dark_pink, nil, nil)
+Group.new('CmpItemKindClass', colors.dark_orange, nil, nil)
+Group.new('CmpItemKindUnit', colors.green, nil, nil)
+Group.new('CmpItemKindConstructor', colors.yellow, nil, nil)
+Group.new('CmpItemAbbrDeprecated', colors.red, nil, nil)
+Group.new('CmpItemAbbrMatch', colors.yellow, nil, styles.bold)

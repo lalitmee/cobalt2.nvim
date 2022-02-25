@@ -10,7 +10,7 @@
 
 cobalt2 theme for neovim in lua using [tjdevries/colorbuddy](https://github.com/tjdevries/colorbuddy.nvim)
 
-![show case image](./media/show.png 'cobalt2 theme for lua and javascript')
+![show case image](./media/show.png "cobalt2 theme for lua and javascript")
 
 ## Features
 
@@ -29,6 +29,8 @@ cobalt2 theme for neovim in lua using [tjdevries/colorbuddy](https://github.com/
   - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
   - [tree-sitter](https://github.com/tree-sitter/tree-sitter)
   - [which-key.nvim](https://github.com/folke/which-key.nvim)
+  - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+  - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 
 <details>
 
@@ -36,22 +38,26 @@ cobalt2 theme for neovim in lua using [tjdevries/colorbuddy](https://github.com/
 
 - telescope.nvim
 
-  ![telescope support](./media/telescope.png 'support for telescope')
+  ![telescope support](./media/telescope.png "support for telescope")
 
 - nvim-notify
 
-  ![notify support](./media/notify.png 'support for notify')
+  ![notify support](./media/notify.png "support for notify")
 
 - nvim-tree.lua
 
-  ![notify support](./media/nvim-tree.png 'support for nvim-tree')
+  ![notify support](./media/nvim-tree.png "support for nvim-tree")
 
 - lualine.nvim
 
-  ![lualine normal](./media/lualine_normal.png 'support for lualine.nvim')
-  ![lualine visual](./media/lualine_visual.png 'support for lualine.nvim')
-  ![lualine command](./media/lualine_command.png 'support for lualine.nvim')
-  ![lualine replace](./media/lualine_replace.png 'support for lualine.nvim')
+  ![lualine normal](./media/lualine_normal.png "support for lualine.nvim")
+  ![lualine visual](./media/lualine_visual.png "support for lualine.nvim")
+  ![lualine command](./media/lualine_command.png "support for lualine.nvim")
+  ![lualine replace](./media/lualine_replace.png "support for lualine.nvim")
+
+- nvim-cmp
+
+  ![nvim-cmp supplier](./media/nvim-cmp.png "support for nvim-cmp")
 
 </details>
 
