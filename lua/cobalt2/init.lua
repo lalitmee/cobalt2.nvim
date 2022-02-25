@@ -59,7 +59,7 @@ Group.new('Constant', colors.dark_pink, nil, styles.italic)
 Group.new('Special', colors.light_green, nil, nil)
 Group.new('MoreMsg', colors.light_green, nil, nil)
 Group.new('Delimiter', colors.dirty_blue, nil, nil)
-Group.new('String', colors.green, nil, nil)
+Group.new('String', colors.light_green, nil, nil)
 Group.new('Identifier', colors.dark_orange, nil, nil)
 Group.new('Structure', colors.dark_blue, nil, styles.italic)
 Group.new('Function', colors.yellow, nil, nil)
@@ -120,10 +120,10 @@ Group.new('TSPunctBracket', colors.dirty_blue, nil, nil)
 Group.new('TSPunctSpecial', colors.dirty_blue, nil, nil)
 -- Constant
 Group.new('TSConstant', colors.blue, nil, nil)
-Group.new('TSConstBuiltin', colors.light_green, nil, nil)
+Group.new('TSConstBuiltin', colors.dark_pink, nil, styles.italic)
 Group.new('TSConstMacro', colors.light_blue, nil, nil)
 Group.new('TSStringRegex', colors.green, nil, nil)
-Group.new('TSString', colors.green, nil, nil)
+Group.new('TSString', colors.light_green, nil, nil)
 Group.new('TSStringEscape', colors.darker_red, nil, nil)
 Group.new('TSCharacter', colors.dark_red, nil, nil)
 Group.new('TSNumber', colors.light_pink, nil, nil)
@@ -133,13 +133,13 @@ Group.new('TSAnnotation', colors.yellow, nil, nil)
 Group.new('TSAttribute', colors.yellow, nil, nil)
 Group.new('TSNamespace', colors.white, nil, styles.italic)
 -- Functions
-Group.new('TSFuncBuiltin', colors.light_green, nil, nil)
+Group.new('TSFuncBuiltin', colors.dark_orange, nil, nil)
 Group.new('TSFunction', colors.yellow, nil, nil)
 Group.new('TSFuncMacro', colors.light_orange, nil, nil)
 Group.new('TSParameter', colors.light_orange, nil, nil)
 Group.new('TSParameterReference', colors.light_orange, nil, nil)
 Group.new('TSMethod', colors.yellow, nil, nil)
-Group.new('TSField', colors.light_orange, nil, nil)
+Group.new('TSField', colors.white, nil, nil)
 Group.new('TSProperty', colors.light_blue, nil, styles.italic)
 Group.new('TSConstructor', colors.light_green, nil, nil)
 -- Keywords
@@ -174,12 +174,12 @@ Group.new('TSTagDelimiter', colors.dirty_blue, nil, nil)
 ---------------------------------------------------------------------------------
 --                                  startify                                   --
 ---------------------------------------------------------------------------------
-Group.new('StartifyBracket', colors.light_yellow, nil, nil)
+Group.new('StartifyBracket', colors.blue, nil, nil)
 Group.new('StartifyNumber', colors.dark_pink, nil, nil)
-Group.new('Startifyfile', colors.dark_orange, nil, nil)
-Group.new('Startifyheader', colors.green, nil, nil)
-Group.new('Startifypath', colors.dark_blue, nil, nil)
-Group.new('Startifyslash', colors.dark_pink, nil, nil)
+Group.new('Startifyfile', colors.blue, nil, nil)
+Group.new('Startifyheader', colors.dark_pink, nil, nil)
+Group.new('Startifypath', colors.yellow, nil, nil)
+Group.new('Startifyslash', colors.blue, nil, nil)
 
 ---------------------------------------------------------------------------------
 --                                 bufferline                                  --
@@ -324,8 +324,8 @@ Group.new('GitSignsDelete', colors.red, nil, nil)
 ---------------------------------------------------------------------------------
 --                              indent-blankline                               --
 ---------------------------------------------------------------------------------
-Group.new('IndentBlankLineChar', colors.grey, nil, nil)
-Group.new('IndentBlankLineContextChar', colors.yellow, nil, nil)
+Group.new('IndentBlankLineChar', colors.darker_grey, nil, nil)
+Group.new('IndentBlankLineContextChar', colors.dark_pink, nil, nil)
 
 ---------------------------------------------------------------------------------
 --                                  markdown                                   --
@@ -340,3 +340,8 @@ Group.new('markdownH3', colors.yellow, colors.cobalt_bg, nil)
 Group.new('markdownH4', colors.yellow, colors.cobalt_bg, nil)
 Group.new('markdownH5', colors.yellow, colors.cobalt_bg, nil)
 Group.new('markdownH6', colors.yellow, colors.cobalt_bg, nil)
+
+---------------------------------------------------------------------------------
+--                                  coc.nvim                                   --
+---------------------------------------------------------------------------------
+-- Group.new('CocSymbolFunction', colors.dark_orange, nil, nil)
