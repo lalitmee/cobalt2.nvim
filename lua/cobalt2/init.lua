@@ -208,7 +208,7 @@ Group.new('BufferLineCloseButtonSelected', colors.red, nil, styles.bold)
 ---------------------------------------------------------------------------------
 --                                  nvim-tree                                  --
 ---------------------------------------------------------------------------------
-Group.new('NvimTreeFolderName', colors.dark_blue, nil, nil)
+Group.new('NvimTreeFolderName', colors.blue, nil, nil)
 Group.new('NvimTreeFolderIcon', colors.yellow, nil, nil)
 Group.new('NvimTreeNormal', colors.white, nil, nil)
 Group.new('NvimTreeOpenedFolderName', colors.light_pink, nil, nil)
@@ -275,12 +275,12 @@ Group.new('GitGutterDelete', colors.red, nil, nil)
 ---------------------------------------------------------------------------------
 --                                  which-key                                  --
 ---------------------------------------------------------------------------------
-Group.new('WhichKey', colors.dark_orange, nil, nil)
-Group.new('WhichKeyGroup', colors.dark_pink, nil, nil)
-Group.new('WhichKeyDesc', colors.dark_blue, nil, nil)
+Group.new('WhichKey', colors.light_blue, nil, nil)
+Group.new('WhichKeyGroup', colors.blue, nil, styles.italic)
+Group.new('WhichKeyDesc', colors.yellow, nil, nil)
 Group.new('WhichKeySeparator', colors.green, nil, nil)
-Group.new('WhichKeyFloat', colors.dark_orange, nil, nil)
-Group.new('WhichKeyValue', colors.dark_blue, nil, nil)
+Group.new('WhichKeyFloat', colors.cursor_line, nil, nil)
+Group.new('WhichKeyValue', colors.cursor_hover, nil, nil)
 
 ---------------------------------------------------------------------------------
 --                                 ts-rainbow                                  --
