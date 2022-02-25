@@ -131,7 +131,7 @@ Group.new('TSPunctDelimiter', colors.dirty_blue, nil, nil)
 Group.new('TSPunctBracket', colors.dirty_blue, nil, nil)
 Group.new('TSPunctSpecial', colors.dirty_blue, nil, nil)
 -- Constant
-Group.new('TSConstant', colors.blue, nil, nil)
+Group.new('TSConstant', colors.yellow, nil, nil)
 Group.new('TSConstBuiltin', colors.dark_pink, nil, styles.italic)
 Group.new('TSConstMacro', colors.light_blue, nil, nil)
 Group.new('TSStringRegex', colors.green, nil, nil)
