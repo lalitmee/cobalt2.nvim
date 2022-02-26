@@ -1,1 +1,2 @@
-vim.notify('This is an error message', 'trace', { title = ' Hello Notify' })
+vim.notify('This is the trace message not too long', 'trace',
+           { title = ' Hello Notify' })
