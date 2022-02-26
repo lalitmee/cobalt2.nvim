@@ -17,7 +17,7 @@ local cobalt2 = {
     z = { fg = p.black, bg = p.yellow },
   },
   visual = { a = { fg = p.black, bg = p.dirty_pink, gui = 'bold' } },
-  replace = { a = { fg = p.black, bg = p.dark_red, gui = 'bold' } },
+  replace = { a = { fg = p.black, bg = p.dark_pink, gui = 'bold' } },
   insert = { a = { fg = p.black, bg = p.dirty_blue, gui = 'bold' } },
   command = { a = { fg = p.black, bg = p.dark_blue, gui = 'bold' } },
 }

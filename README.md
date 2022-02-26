@@ -96,6 +96,7 @@ require('colorbuddy').colorscheme('cobalt2')
 - lualine.nvim
 
   ![lualine normal](./media/lualine_normal.png "lualine.nvim_normal")
+  ![lualine insert](./media/lualine_insert.png "lualine.nvim_insert")
   ![lualine visual](./media/lualine_visual.png "lualine.nvim_visual")
   ![lualine command](./media/lualine_command.png "lualine.nvim_command")
   ![lualine replace](./media/lualine_replace.png "lualine.nvim_replace")
