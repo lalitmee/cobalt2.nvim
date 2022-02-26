@@ -2,60 +2,8 @@
 -- License: MIT
 --
 local colors = require('colorbuddy.color').colors
-local Color = require('colorbuddy.color').Color
 local styles = require('colorbuddy.style').styles
 local Group = require('colorbuddy.group').Group
-
-Color.new('black', '#1C1C1C')
-Color.new('darkest_grey', '#3A3A3A')
-Color.new('darker_grey', '#444444')
-Color.new('dark_grey', '#626262')
-Color.new('grey', '#808080')
-Color.new('light_grey', '#9E9E9E')
-Color.new('lighter_grey', '#BCBCBC')
-Color.new('lightest_grey', '#CCCCCC')
-Color.new('white', '#FFFFFF')
-
-Color.new('dark_orange', '#FF9A00')
-Color.new('light_orange', '#FF9D00')
-Color.new('yellow', '#FFC600')
-Color.new('light_yellow', '#F2ED7F')
-
-Color.new('darkest_green', '#2D7067')
-Color.new('dirty_green', '#70b950')
-Color.new('green', '#3AD900')
-Color.new('light_green', '#88FF88')
-Color.new('lighter_green', '#9EFF80')
-Color.new('lightest_green', '#BBFFDD')
-
-Color.new('dark_purple', '#345FA8')
-Color.new('purple', '#967EFB')
-Color.new('light_purple', '#DEEBFE')
-
-Color.new('cobalt_bg', '#193549')
-Color.new('darkest_blue', '#0000df')
-Color.new('darker_blue', '#0050A4')
-Color.new('dark_blue', '#0088FF')
-Color.new('blue', '#00AAFF')
-Color.new('light_blue', '#80FCFF')
-Color.new('greyish_blue', '#8fbfdc')
-Color.new('dirty_blue', '#668799')
-
-Color.new('aubergine', '#4F0037')
-Color.new('darker_red', '#700009')
-Color.new('dark_red', '#902020')
-Color.new('red', '#FF0000')
-
-Color.new('dark_pink', '#FF628C')
-Color.new('pink', '#FF00FF')
-Color.new('light_pink', '#EE80E1')
-Color.new('lightest_pink', '#FFA5F3')
-Color.new('pale_pink', '#F0A0C0')
-Color.new('dirty_pink', '#EB939A')
-
--- custom colors
-Color.new('cursor_line', '#0d3a58')
-Color.new('cursor_hover', '#185294')
 
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
@@ -82,7 +30,7 @@ Group.new('SpecialKey', colors.darker_grey, colors.black, nil)
 Group.new('MatchParen', colors.white, colors.dark_purple, styles.bold)
 Group.new('MatchWord', colors.white, colors.dark_purple, styles.bold)
 Group.new('Directory', colors.yellow, nil, nil)
-Group.new('ErrorMsg', nil, colors.dark_red, nil)
+Group.new('ErrorMsg', nil, colors.red, nil)
 Group.new('Question', colors.green, nil, nil)
 Group.new('StorageClass', colors.light_orange, nil, nil)
 Group.new('TabLine', colors.black, colors.lighter_grey, styles.italic)

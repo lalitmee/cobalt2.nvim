@@ -1,6 +1,8 @@
 -- Copyright (c) 2022-2022 Lalit Kumar
 -- License: MIT
 --
+local Color = require('colorbuddy.color').Color
+
 local colors = {
   cobalt_bg = '#193549',
 
@@ -59,6 +61,16 @@ local colors = {
 
   -- cursor line
   cursor_line = '#0d3a58',
+  cursor_hover = '#185294',
 }
+
+-- create colors for cobalt2 theme
+local function create_colors(p)
+  for i, color in pairs(p) do
+    Color.new(i, color)
+  end
+end
+
+create_colors(colors)
 
 return colors
