@@ -1,0 +1,5 @@
+---------------------------------------------------------------------------------
+--                                 quick-scope                                 --
+---------------------------------------------------------------------------------
+-- Group.new('QuickScopePrimary', colors.pink, nil, nil)
+-- Group.new('QuickScopeSecondary', colors.red, nil, nil)
