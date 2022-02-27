@@ -73,7 +73,6 @@ require('colorbuddy').colorscheme('cobalt2')
 ## Screenshots
 
 - telescope.nvim
-
   ![telescope support](./media/telescope.png "telescope")
 
 - nvim-notify
@@ -90,11 +89,9 @@ require('colorbuddy').colorscheme('cobalt2')
     ![notify support](./media/notify_trace.png "notify_trace")
 
 - nvim-tree.lua
-
   ![nvim-tree support](./media/nvim-tree.png "nvim-tree")
 
 - lualine.nvim
-
   ![lualine normal](./media/lualine_normal.png "lualine.nvim_normal")
   ![lualine insert](./media/lualine_insert.png "lualine.nvim_insert")
   ![lualine visual](./media/lualine_visual.png "lualine.nvim_visual")
@@ -102,12 +99,13 @@ require('colorbuddy').colorscheme('cobalt2')
   ![lualine replace](./media/lualine_replace.png "lualine.nvim_replace")
 
 - nvim-cmp
-
-  ![nvim-cmp supplier](./media/nvim-cmp.png "nvim-cmp     ")
+  ![nvim-cmp support](./media/nvim-cmp.png "nvim-cmp")
 
 - trouble.nvim
+  ![trouble.nvim support](./media/trouble.png "trouble.nvim")
 
-  ![trouble.nvim supplier](./media/trouble.png "trouble.nvim ")
+- nvim-hlslens
+  ![nvim-hlslens support](./media/nvim-hlslens.png "nvim-hlslens")
 
 ## Contributing
 

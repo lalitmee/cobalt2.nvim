@@ -103,6 +103,7 @@ Group.new('SignColumn', colors.cobalt_bg, nil, nil)
 Group.new('ColorColumn', colors.yellow, colors.cobalt_bg, nil)
 Group.new('Title', colors.dirty_green, nil, styles.bold)
 Group.new('Search', colors.black, colors.blue, styles.NONE)
+Group.new('IncSearch', colors.black, colors.yellow, styles.NONE)
 Group.new('SpellBad', colors.dark_red, nil, styles.underline)
 Group.new('SpellCap', nil, colors.darkest_blue, styles.underline)
 Group.new('SpellRare', nil, colors.aubergine, styles.underline)
@@ -252,6 +253,7 @@ Group.new('TelescopePrompt', colors.yellow, nil, nil)
 Group.new('TelescopePromptBorder', colors.blue, nil, nil)
 Group.new('TelescopePromptPrefix', colors.dark_orange, nil, nil)
 Group.new('TelescopeResultsBorder', colors.blue, nil, nil)
+Group.new('TelescopeResultsNumber', colors.dark_pink, nil, nil)
 Group.new('TelescopeSelection', colors.light_orange, colors.cursor_hover, nil)
 Group.new('TelescopeSelectionCaret', colors.dark_orange, colors.cursor_hover,
           nil)
@@ -526,3 +528,8 @@ Group.new('TroubleFile', colors.blue, nil, nil)
 Group.new('TroubleHint', colors.green, nil, nil)
 Group.new('TroubleTextHint', colors.green, nil, nil)
 Group.new('TroubleText', colors.light_grey, nil, nil)
+
+---------------------------------------------------------------------------------
+--                                   nvim-hlslens                              --
+---------------------------------------------------------------------------------
+Group.new('HlSearchLens', colors.black, colors.blue, nil)
