@@ -31,7 +31,4 @@ end
 
 cobalt2 = setmetatable(cobalt2, mt)
 
--- -- NOTE: for testing I have this here, was not able to set use_local for packer
--- require('lualine').setup { options = { theme = cobalt2 } }
-
 return cobalt2

@@ -1,11 +1,7 @@
 -- Copyright (c) 2022-2022 Lalit Kumar
 -- License: MIT
 --
-local colors = require('cobalt2.utils').colors
 local Color = require('cobalt2.utils').Color
-local styles = require('cobalt2.utils').styles
-local Group = require('cobalt2.utils').Group
-
 local palette = require('cobalt2.palette')
 
 -- colors
