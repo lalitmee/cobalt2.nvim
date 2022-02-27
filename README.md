@@ -35,6 +35,7 @@ cobalt2 theme for neovim in lua using [tjdevries/colorbuddy](https://github.com/
   - [neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim)
   - [neogit](https://github.com/TimUntersberger/neogit)
   - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+  - [nvim-hlslens](https://github.com/kevinhwang91/nvim-hlslens)
   - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
   - [nvim-notify](https://github.com/rcarriga/nvim-notify)
   - [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
