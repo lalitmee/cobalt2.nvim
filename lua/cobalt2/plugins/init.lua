@@ -1,3 +1,8 @@
+-- ╭──────────────────────────────────────────────────────────╮
+-- │          Copyright (c) 2022-present Lalit Kumar          │
+-- │                       License: MIT                       │
+-- ╰──────────────────────────────────────────────────────────╯
+--
 require('cobalt2/plugins/barbar')
 require('cobalt2/plugins/bufferline')
 require('cobalt2/plugins/coc')

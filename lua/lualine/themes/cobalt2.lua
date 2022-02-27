@@ -1,5 +1,7 @@
--- Copyright (c) 2022-2022 Lalit Kumar
--- License: MIT
+-- ╭──────────────────────────────────────────────────────────╮
+-- │          Copyright (c) 2022-present Lalit Kumar          │
+-- │                       License: MIT                       │
+-- ╰──────────────────────────────────────────────────────────╯
 --
 local p = require('cobalt2.palette')
 

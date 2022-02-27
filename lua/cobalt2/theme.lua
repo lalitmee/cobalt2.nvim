@@ -3,9 +3,7 @@ local styles = require('cobalt2.utils').styles
 local Group = require('cobalt2.utils').Group
 
 ---------------------------------------------------------------------------------
----------------------------------------------------------------------------------
---                              highlight groups                               --
----------------------------------------------------------------------------------
+--                                    theme                                    --
 ---------------------------------------------------------------------------------
 Group.new('Normal', colors.white, colors.cobalt_bg, nil)
 Group.new('Comment', colors.dark_blue, nil, styles.italic)
