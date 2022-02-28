@@ -113,6 +113,9 @@ require('colorbuddy').colorscheme('cobalt2')
 - nvim-lsp-installer
   ![nvim-lsp-installer support](./media/nvim-lsp-installer.png "nvim-lsp-installer")
 
+- which-key.nvim
+  ![which-key.nvim support](./media/which-key.png "which-key.nvim")
+
 ## Contributing
 
 All contributions are welcome! Just open a pull request. Please read [this](https://cbea.ms/git-commit)
