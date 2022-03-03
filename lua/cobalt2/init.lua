@@ -50,11 +50,8 @@ Color.new("dirty_pink", palette.dirty_pink)
 Color.new("cursor_line", palette.cursor_line)
 Color.new("cursor_hover", palette.cursor_hover)
 
--- theme
+-- applying highlights
 require("cobalt2.theme")
-
--- plugins
+require("cobalt2.syntax")
 require("cobalt2.plugins")
-
--- languages
 require("cobalt2.languages")

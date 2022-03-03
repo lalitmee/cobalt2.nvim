@@ -5,7 +5,7 @@ local Group = require("cobalt2.utils").Group
 ---------------------------------------------------------------------------------
 --                               nvim-treesitter                               --
 ---------------------------------------------------------------------------------
-Group.new("TSError", colors.dark_red, nil, nil)
+Group.new("TSError", colors.red:light(), nil, nil)
 Group.new("TSPunctDelimiter", colors.white, nil, nil)
 Group.new("TSPunctBracket", colors.white, nil, nil)
 Group.new("TSPunctSpecial", colors.white, nil, nil)

@@ -4,9 +4,9 @@ local Group = require("cobalt2.utils").Group
 ---------------------------------------------------------------------------------
 --                                 nvim-notify                                 --
 ---------------------------------------------------------------------------------
-Group.new("NotifyERRORBorder", colors.red, nil, nil)
-Group.new("NotifyERRORIcon", colors.red, nil, nil)
-Group.new("NotifyERRORTitle", colors.red, nil, nil)
+Group.new("NotifyERRORBorder", colors.red:light(), nil, nil)
+Group.new("NotifyERRORIcon", colors.red:light(), nil, nil)
+Group.new("NotifyERRORTitle", colors.red:light(), nil, nil)
 Group.new("NotifyWARNBorder", colors.light_yellow, nil, nil)
 Group.new("NotifyWARNIcon", colors.light_yellow, nil, nil)
 Group.new("NotifyWARNTitle", colors.light_yellow, nil, nil)
