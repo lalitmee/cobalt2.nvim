@@ -32,6 +32,7 @@ cobalt2 theme for neovim in lua using [tjdevries/colorbuddy](https://github.com/
   - [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
   - [lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim)
   - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+  - [marks.nvim](https://github.com/chentau/marks.nvim)
   - [neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim)
   - [neogit](https://github.com/TimUntersberger/neogit)
   - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
