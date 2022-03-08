@@ -22,7 +22,7 @@ Group.new("TelescopeResultsNormal", colors.white, nil, nil)
 Group.new("TelescopeResultsTitle", colors.yellow, nil, nil)
 
 -- telescope results
-Group.new("TelescopeResultsVariable", colors.white, nil, styles.italic)
+Group.new("TelescopeResultsVariable", colors.light_green, nil, styles.italic)
 Group.new("TelescopeResultsMethod", colors.yellow, nil, styles.italic)
 Group.new("TelescopeResultsConstant", colors.light_grey, nil, styles.italic)
 Group.new("TelescopeResultsFunction", colors.light_pink, nil, styles.italic)
