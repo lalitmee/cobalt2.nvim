@@ -7,7 +7,7 @@ local Group = require("cobalt2.utils").Group
 ---------------------------------------------------------------------------------
 Group.new("Normal", colors.white, colors.cobalt_bg, nil)
 Group.new("NormalNC", colors.white, colors.cobalt_bg, nil)
-Group.new("NormalFloat", colors.white, colors.cursor_line, nil)
+Group.new("NormalFloat", colors.white, nil, nil)
 Group.new("FloatBorder", colors.blue, nil, nil)
 Group.new("ColorColumn", nil, colors.cobalt_bg, nil)
 Group.new("Conceal", colors.dark_grey, nil, nil)
