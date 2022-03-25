@@ -2,7 +2,7 @@
 -- │          Copyright (c) 2022-present Lalit Kumar          │
 -- │                       License: MIT                       │
 -- ╰──────────────────────────────────────────────────────────╯
---
+
 require("cobalt2/plugins/barbar")
 require("cobalt2/plugins/bufferline")
 require("cobalt2/plugins/coc")
@@ -11,7 +11,9 @@ require("cobalt2/plugins/gitgutter")
 require("cobalt2/plugins/gitsigns")
 require("cobalt2/plugins/hop")
 require("cobalt2/plugins/indent-blankline")
+require("cobalt2/plugins/leap")
 require("cobalt2/plugins/lightspeed")
+require("cobalt2/plugins/lir")
 require("cobalt2/plugins/marks")
 require("cobalt2/plugins/neo-tree")
 require("cobalt2/plugins/neogit")
