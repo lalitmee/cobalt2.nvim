@@ -6,6 +6,7 @@
 require("cobalt2/plugins/barbar")
 require("cobalt2/plugins/bufferline")
 require("cobalt2/plugins/coc")
+require("cobalt2/plugins/eyeliner")
 require("cobalt2/plugins/fidget")
 require("cobalt2/plugins/gitgutter")
 require("cobalt2/plugins/gitsigns")
