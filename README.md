@@ -50,6 +50,7 @@ cobalt2 theme for neovim in lua using [tjdevries/colorbuddy](https://github.com/
   - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
   - [vim-sneak](https://github.com/justinmk/vim-sneak)
   - [which-key.nvim](https://github.com/folke/which-key.nvim)
+  - and more...
 
 ## Installation
 
