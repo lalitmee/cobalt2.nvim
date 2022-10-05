@@ -1,9 +1,6 @@
 local colors = require("cobalt2.utils").colors
 local Group = require("cobalt2.utils").Group
 
----------------------------------------------------------------------------------
---                                   neotree                                   --
----------------------------------------------------------------------------------
 Group.new("NeoTreeBufferNumber", colors.dark_pink, nil, nil)
 Group.new("NeoTreeDimText", colors.light_grey, nil, nil)
 Group.new("NeoTreeDirectoryIcon", colors.dark_orange, nil, nil)

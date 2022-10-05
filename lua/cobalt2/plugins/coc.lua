@@ -2,9 +2,7 @@ local colors = require("cobalt2.utils").colors
 local Group = require("cobalt2.utils").Group
 local styles = require("cobalt2.utils").styles
 
----------------------------------------------------------------------------------
---                                  coc.nvim                                   --
----------------------------------------------------------------------------------
+-- general
 Group.new("CocFadeOut", colors.lightest_grey, nil, nil)
 
 -- references

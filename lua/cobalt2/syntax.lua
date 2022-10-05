@@ -2,7 +2,7 @@ local colors = require("cobalt2.utils").colors
 local styles = require("cobalt2.utils").styles
 local Group = require("cobalt2.utils").Group
 
--- syntax highlight
+-- syntax highlights
 Group.new("Type", colors.yellow, nil, nil)
 Group.new("StorageClass", colors.light_orange, nil, nil)
 Group.new("Structure", colors.dark_blue, nil, styles.italic)

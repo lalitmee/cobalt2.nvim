@@ -1,9 +1,6 @@
 local colors = require("cobalt2.utils").colors
 local Group = require("cobalt2.utils").Group
 
----------------------------------------------------------------------------------
---                                 javascript                                  --
----------------------------------------------------------------------------------
 Group.new("jsVariableDef", colors.white, nil, nil)
 Group.new("jsFuncArgs", colors.light_blue, nil, nil)
 Group.new("jsFuncBlock", colors.light_blue, nil, nil)

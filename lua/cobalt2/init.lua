@@ -6,7 +6,9 @@
 local Color = require("cobalt2.utils").Color
 local palette = require("cobalt2.palette")
 
--- colors
+--------------------------------------------------------------------------------
+--  NOTE: colors {{{
+--------------------------------------------------------------------------------
 Color.new("black", palette.black)
 Color.new("darkest_grey", palette.darkest_grey)
 Color.new("darker_grey", palette.darker_grey)
@@ -49,9 +51,17 @@ Color.new("pale_pink", palette.pale_pink)
 Color.new("dirty_pink", palette.dirty_pink)
 Color.new("cursor_line", palette.cursor_line)
 Color.new("cursor_hover", palette.cursor_hover)
+-- }}}
+--------------------------------------------------------------------------------
 
--- applying highlights
+--------------------------------------------------------------------------------
+--  NOTE: highlights {{{
+--------------------------------------------------------------------------------
 require("cobalt2.theme")
 require("cobalt2.syntax")
 require("cobalt2.plugins")
 require("cobalt2.languages")
+-- }}}
+--------------------------------------------------------------------------------
+
+-- vim:fdm=marker

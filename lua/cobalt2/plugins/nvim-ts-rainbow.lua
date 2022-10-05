@@ -1,9 +1,6 @@
 local colors = require("cobalt2.utils").colors
 local Group = require("cobalt2.utils").Group
 
----------------------------------------------------------------------------------
---                                 ts-rainbow                                  --
----------------------------------------------------------------------------------
 Group.new("rainbowcol1", colors.dark_pink, nil, nil)
 Group.new("rainbowcol2", colors.dark_orange, nil, nil)
 Group.new("rainbowcol3", colors.green, nil, nil)

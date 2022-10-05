@@ -1,9 +1,6 @@
 local colors = require("cobalt2.utils").colors
 local Group = require("cobalt2.utils").Group
 
-------------------------------------------------------------------------------------------------------------------------
---  octo.nvim
-------------------------------------------------------------------------------------------------------------------------
 Group.new("OctoEditable", colors.white, colors.darker_blue, nil)
 Group.new("OctoRedFloat", colors.red, nil, nil)
 Group.new("OctoBlueFloat", colors.blue, nil, nil)

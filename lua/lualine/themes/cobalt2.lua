@@ -2,7 +2,7 @@
 -- │          Copyright (c) 2022-present Lalit Kumar          │
 -- │                       License: MIT                       │
 -- ╰──────────────────────────────────────────────────────────╯
---
+
 local p = require("cobalt2.palette")
 
 local cobalt2 = {

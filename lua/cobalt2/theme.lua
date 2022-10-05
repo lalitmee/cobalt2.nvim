@@ -2,9 +2,6 @@ local colors = require("cobalt2.utils").colors
 local styles = require("cobalt2.utils").styles
 local Group = require("cobalt2.utils").Group
 
----------------------------------------------------------------------------------
---                                    theme                                    --
----------------------------------------------------------------------------------
 Group.new("ColorColumn", nil, colors.cobalt_bg, nil)
 Group.new("CommandMode", colors.black, colors.darker_blue, nil)
 Group.new("Conceal", colors.dark_grey, nil, nil)
