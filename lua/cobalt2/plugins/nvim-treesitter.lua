@@ -52,3 +52,9 @@ Group.new("TSURI", colors.light_blue, nil, styles.underline)
 Group.new("TSUnderline", colors.white, nil, styles.underline)
 Group.new("TSVariable", colors.white, nil, nil)
 Group.new("TSVariableBuiltin", colors.yellow, nil, nil)
+
+--------------------------------------------------------------------------------
+--  treesitter-context
+--------------------------------------------------------------------------------
+Group.new("TreesitterContext", nil, colors.cursor_line, nil)
+Group.new("TreesitterContextLineNumber", colors.blue, colors.cursor_line, nil)
