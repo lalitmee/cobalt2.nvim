@@ -1,10 +1,10 @@
 local colors = require("cobalt2.utils").colors
 local Group = require("cobalt2.utils").Group
 
-Group.new("NeogitBranch", colors.darkest_green, nil, nil)
-Group.new("NeogitDiffAdd", colors.white, colors.darkest_green, nil)
-Group.new("NeogitDiffAddHighlight", colors.white, colors.darkest_green, nil)
-Group.new("NeogitDiffAddRegion", colors.white, colors.darkest_green, nil)
+Group.new("NeogitBranch", colors.green, nil, nil)
+Group.new("NeogitDiffAdd", colors.white, colors.dirty_green:dark(), nil)
+Group.new("NeogitDiffAddHighlight", colors.white, colors.dirty_green:dark(), nil)
+Group.new("NeogitDiffAddRegion", colors.white, colors.dirty_green:dark(), nil)
 Group.new("NeogitDiffContextHighlight", colors.white, colors.cobalt_bg:light(), nil)
 Group.new("NeogitDiffDelete", colors.white, colors.dark_red, nil)
 Group.new("NeogitDiffDeleteHighlight", colors.white, colors.dark_red, nil)
