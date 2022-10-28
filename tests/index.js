@@ -7,3 +7,7 @@ if (hello) {
     console.log(item);
   });
 }
+
+try {
+
+} catch {}
