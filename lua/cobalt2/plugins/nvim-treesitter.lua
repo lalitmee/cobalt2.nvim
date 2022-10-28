@@ -2,56 +2,130 @@ local colors = require("cobalt2.utils").colors
 local styles = require("cobalt2.utils").styles
 local Group = require("cobalt2.utils").Group
 
-Group.new("TSAnnotation", colors.yellow, nil, nil)
-Group.new("TSAttribute", colors.yellow, nil, nil)
-Group.new("TSBoolean", colors.dark_pink, nil, styles.italic)
-Group.new("TSCharacter", colors.dark_pink, nil, nil)
-Group.new("TSConditional", colors.dark_orange, nil, nil)
-Group.new("TSConstBuiltin", colors.dark_pink, nil, styles.italic)
-Group.new("TSConstMacro", colors.light_blue, nil, nil)
-Group.new("TSConstant", colors.white, nil, nil)
-Group.new("TSConstructor", colors.light_green, nil, nil)
-Group.new("TSEmphasis", colors.white, nil, styles.italic)
-Group.new("TSError", colors.red:light(), nil, nil)
-Group.new("TSException", colors.pink, nil, nil)
-Group.new("TSField", colors.white, nil, nil)
-Group.new("TSFloat", colors.dark_pink, nil, nil)
-Group.new("TSFuncBuiltin", colors.dark_orange, nil, nil)
-Group.new("TSFuncMacro", colors.light_orange, nil, nil)
-Group.new("TSFunction", colors.dark_orange, nil, nil)
-Group.new("TSInclude", colors.dark_orange, nil, styles.italic)
-Group.new("TSKeyword", colors.dark_orange, nil, styles.italic)
-Group.new("TSKeywordFunction", colors.light_pink, nil, styles.bold + styles.italic)
-Group.new("TSKeywordOperator", colors.yellow, nil, nil)
-Group.new("TSLabel", colors.yellow, nil, nil)
-Group.new("TSLiteral", colors.light_green, nil, nil)
-Group.new("TSMethod", colors.yellow, nil, nil)
-Group.new("TSNamespace", colors.white, nil, styles.italic)
-Group.new("TSNumber", colors.dark_pink, nil, nil)
-Group.new("TSOperator", colors.yellow, nil, nil)
-Group.new("TSParameter", colors.light_orange, nil, nil)
-Group.new("TSParameterReference", colors.light_orange, nil, nil)
-Group.new("TSProperty", colors.light_blue, nil, styles.italic)
-Group.new("TSPunctBracket", colors.white, nil, nil)
-Group.new("TSPunctDelimiter", colors.white, nil, nil)
-Group.new("TSPunctSpecial", colors.dark_pink, nil, nil)
-Group.new("TSRepeat", colors.dark_orange, nil, nil)
-Group.new("TSString", colors.light_green, nil, nil)
-Group.new("TSStringEscape", colors.light_green, nil, nil)
-Group.new("TSStringRegex", colors.green, nil, nil)
-Group.new("TSStringSpecial", colors.green, nil, styles.italic)
-Group.new("TSStrong", colors.white, nil, styles.bold)
-Group.new("TSStructure", colors.light_blue, nil, nil)
-Group.new("TSTag", colors.yellow, nil, nil)
-Group.new("TSTagDelimiter", colors.dirty_blue, nil, nil)
-Group.new("TSText", colors.white, nil, nil)
-Group.new("TSTitle", colors.yellow, nil, styles.bold)
-Group.new("TSType", colors.yellow, nil, nil)
-Group.new("TSTypeBuiltin", colors.yellow, nil, nil)
-Group.new("TSURI", colors.light_blue, nil, styles.underline)
-Group.new("TSUnderline", colors.white, nil, styles.underline)
-Group.new("TSVariable", colors.white, nil, nil)
-Group.new("TSVariableBuiltin", colors.yellow, nil, nil)
+--------------------------------------------------------------------------------
+--  NOTE: misc {{{
+--------------------------------------------------------------------------------
+Group.new("@annotation", colors.yellow, nil, nil)
+Group.new("@error", colors.red:light(), nil, nil)
+Group.new("@operator", colors.dark_orange, nil, nil)
+Group.new("@structure", colors.light_blue, nil, nil)
+-- }}}
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--  NOTE: literals {{{
+--------------------------------------------------------------------------------
+Group.new("@string", colors.light_green, nil, nil)
+Group.new("@string.escape", colors.light_green, nil, nil)
+Group.new("@string.regex", colors.green, nil, nil)
+Group.new("@string.special", colors.green, nil, styles.italic)
+
+Group.new("@character", colors.dark_pink, nil, nil)
+Group.new("@character.special", colors.dark_pink, nil, nil)
+
+Group.new("@number", colors.dark_pink, nil, styles.italic)
+Group.new("@float", colors.dark_pink, nil, nil)
+Group.new("@boolean", colors.dark_pink, nil, styles.italic)
+-- }}}
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--  NOTE: functions {{{
+--------------------------------------------------------------------------------
+Group.new("@function", colors.dark_orange, nil, nil)
+Group.new("@function.call", colors.dark_orange, nil, nil)
+Group.new("@function.builtin", colors.light_pink, nil, nil)
+Group.new("@function.macro", colors.light_orange, nil, nil)
+
+Group.new("@method", colors.dark_orange, nil, nil)
+Group.new("@method.call", colors.dark_orange, nil, nil)
+
+Group.new("@constructor", colors.light_green, nil, nil)
+Group.new("@parameter", colors.white, nil, nil)
+Group.new("@parameter.reference", colors.light_orange, nil, nil)
+-- }}}
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--  NOTE: keywords {{{
+--------------------------------------------------------------------------------
+Group.new("@keyword", colors.dark_orange, nil, styles.bold + styles.italic)
+Group.new("@keyword.function", colors.light_pink, nil, styles.bold + styles.italic)
+Group.new("@keyword.operator", colors.yellow, nil, nil)
+Group.new("@keyword.return", colors.dark_pink, nil, styles.bold + styles.italic)
+
+Group.new("@conditional", colors.dark_orange, nil, nil)
+Group.new("@repeat", colors.dark_orange, nil, nil)
+Group.new("@debug", colors.dark_pink, nil, nil)
+Group.new("@label", colors.dark_orange, nil, nil)
+Group.new("@include", colors.dark_orange, nil, styles.italic)
+Group.new("@exception", colors.dark_pink, nil, nil)
+-- }}}
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--  NOTE: types {{{
+--------------------------------------------------------------------------------
+Group.new("@type", colors.yellow, nil, nil)
+Group.new("@type.builtin", colors.yellow, nil, nil)
+
+Group.new("@attribute", colors.yellow, nil, nil)
+Group.new("@field", colors.white, nil, nil)
+Group.new("@property", colors.light_blue, nil, styles.italic)
+-- }}}
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--  NOTE: identifiers {{{
+--------------------------------------------------------------------------------
+Group.new("@variable", colors.white, nil, nil)
+Group.new("@variable.builtin", colors.dark_pink, nil, nil)
+
+Group.new("@constant", colors.white, nil, nil)
+Group.new("@constant.builtin", colors.dark_pink, nil, styles.italic)
+Group.new("@constant.macro", colors.light_blue, nil, nil)
+
+Group.new("@namespace", colors.white, nil, styles.italic)
+Group.new("@symbol", colors.white, nil, styles.italic)
+-- }}}
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--  NOTE: punctuations {{{
+--------------------------------------------------------------------------------
+Group.new("@punctuation.bracket", colors.white, nil, nil)
+Group.new("@punctuation.delimiter", colors.dark_orange, nil, nil)
+Group.new("@punctuation.special", colors.dark_pink, nil, nil)
+-- }}}
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--  NOTE: tags {{{
+--------------------------------------------------------------------------------
+Group.new("@tag", colors.yellow, nil, nil)
+Group.new("@tag.attribute", colors.yellow, nil, styles.italic)
+Group.new("@tag.delimiter", colors.dirty_blue, nil, nil)
+-- }}}
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--  NOTE: text {{{
+--------------------------------------------------------------------------------
+Group.new("@text", colors.white, nil, nil)
+Group.new("@text.strong", colors.white, nil, styles.bold)
+Group.new("@text.emphasis", colors.white, nil, styles.italic)
+Group.new("@text.underline", colors.white, nil, styles.underline)
+Group.new("@text.title", colors.white, nil, styles.bold)
+Group.new("@text.uri", colors.light_blue, nil, styles.underline)
+Group.new("@text.todo", colors.dark_pink, nil, styles.bold)
+Group.new("@text.note", colors.dirty_green, nil, styles.bold)
+Group.new("@text.warning", colors.light_yellow, nil, styles.bold)
+Group.new("@text.danger", colors.red:light(), nil, styles.bold)
+Group.new("@text.underline", colors.white, nil, styles.underline)
+Group.new("@text.diff.add", colors.white, colors.dirty_green:dark(), nil)
+Group.new("@text.diff.delete", colors.white, colors.dark_red, nil)
+-- }}}
+--------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
 --  treesitter-context
