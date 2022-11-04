@@ -40,7 +40,7 @@ Group.new("@function.macro", colors.light_orange, nil, nil)
 Group.new("@method", colors.dark_orange, nil, nil)
 Group.new("@method.call", colors.dark_orange, nil, nil)
 
-Group.new("@constructor", colors.light_green, nil, nil)
+Group.new("@constructor", colors.white, nil, nil)
 Group.new("@parameter", colors.white, nil, nil)
 Group.new("@parameter.reference", colors.light_orange, nil, nil)
 -- }}}
