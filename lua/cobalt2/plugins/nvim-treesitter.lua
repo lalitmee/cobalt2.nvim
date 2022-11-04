@@ -113,6 +113,7 @@ Group.new("@tag.delimiter", colors.dirty_blue, nil, nil)
 --------------------------------------------------------------------------------
 Group.new("@text", colors.white, nil, nil)
 Group.new("@text.strong", colors.white, nil, styles.bold)
+Group.new("@text.strike", colors.white, nil, styles.strikethrough)
 Group.new("@text.emphasis", colors.white, nil, styles.italic)
 Group.new("@text.underline", colors.white, nil, styles.underline)
 Group.new("@text.title", colors.white, nil, styles.bold)
