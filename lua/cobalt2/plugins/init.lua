@@ -4,8 +4,10 @@
 -- ╰──────────────────────────────────────────────────────────╯
 
 require("cobalt2/plugins/barbar")
+require("cobalt2/plugins/barbecue")
 require("cobalt2/plugins/bufferline")
 require("cobalt2/plugins/coc")
+require("cobalt2/plugins/diffview")
 require("cobalt2/plugins/eyeliner")
 require("cobalt2/plugins/fidget")
 require("cobalt2/plugins/gitgutter")
