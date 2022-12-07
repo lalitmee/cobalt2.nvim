@@ -1,7 +1,7 @@
 local colors = require("cobalt2.utils").colors
 local Group = require("cobalt2.utils").Group
 
-Group.new("OctoEditable", colors.white, colors.darker_blue, nil)
+Group.new("OctoEditable", colors.white, nil, nil)
 Group.new("OctoRedFloat", colors.red, nil, nil)
 Group.new("OctoBlueFloat", colors.blue, nil, nil)
 Group.new("OctoGreyFloat", colors.grey, nil, nil)
