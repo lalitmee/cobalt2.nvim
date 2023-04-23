@@ -66,9 +66,26 @@ cobalt2 theme for neovim in lua using [tjdevries/colorbuddy](https://github.com/
 
 ## Installation
 
+- [lazy.nvim](https://github.com/folke/lazy.nvim)
 ```lua
-use { 'lalitmee/cobalt2.nvim', requires = 'tjdevries/colorbuddy.nvim' }
+{
+    "lalitmee/cobalt2.nvim",
+    event = { "ColorSchemePre" }, -- if you want to lazy load
+    dependencies = { "tjdevries/colorbuddy.nvim" },
+    init = function()
+        require("colorbuddy").colorscheme("cobalt2")
+    end,
+},
 ```
+
+- [packer.nvim](https://github.com/wbthomason/packer.nvim)
+```lua
+use {
+    'lalitmee/cobalt2.nvim',
+    requires = 'tjdevries/colorbuddy.nvim'
+}
+```
+
 
 ## Usage
 
