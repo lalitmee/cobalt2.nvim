@@ -49,8 +49,13 @@ Group.new("@parameter.reference", colors.light_orange, nil, nil)
 --------------------------------------------------------------------------------
 --  NOTE: keywords {{{
 --------------------------------------------------------------------------------
-Group.new("@keyword", colors.dark_orange, nil, styles.bold + styles.italic)
-Group.new("@keyword.function", colors.light_pink, nil, styles.bold + styles.italic)
+Group.new("@keyword", colors.light_pink, nil, styles.bold + styles.italic)
+Group.new(
+    "@keyword.function",
+    colors.light_pink,
+    nil,
+    styles.bold + styles.italic
+)
 Group.new("@keyword.operator", colors.yellow, nil, nil)
 Group.new("@keyword.return", colors.dark_pink, nil, styles.bold + styles.italic)
 
@@ -58,7 +63,7 @@ Group.new("@conditional", colors.dark_orange, nil, nil)
 Group.new("@repeat", colors.dark_orange, nil, nil)
 Group.new("@debug", colors.dark_pink, nil, nil)
 Group.new("@label", colors.dark_orange, nil, nil)
-Group.new("@include", colors.dark_orange, nil, styles.italic)
+Group.new("@include", colors.dark_pink, nil, styles.italic)
 Group.new("@exception", colors.dark_pink, nil, nil)
 -- }}}
 --------------------------------------------------------------------------------
