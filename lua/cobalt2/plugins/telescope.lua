@@ -48,9 +48,9 @@ Group.new("TelescopeResultsVariable", colors.light_green, nil, styles.italic)
 --------------------------------------------------------------------------------
 --  NOTE: diff {{{
 --------------------------------------------------------------------------------
-Group.new("TelescopeResultsDiffAdd", colors.black, colors.green, nil)
-Group.new("TelescopeResultsDiffChange", colors.black, colors.light_green, nil)
-Group.new("TelescopeResultsDiffDelete", colors.white, colors.red, nil)
-Group.new("TelescopeResultsDiffUntracked", colors.black, colors.light_blue, nil)
+Group.new("TelescopeResultsDiffAdd", colors.green, nil, nil)
+Group.new("TelescopeResultsDiffChange", colors.light_green, nil, nil)
+Group.new("TelescopeResultsDiffDelete", colors.red, nil, nil)
+Group.new("TelescopeResultsDiffUntracked", colors.light_blue, nil, nil)
 -- }}}
 --------------------------------------------------------------------------------

@@ -128,8 +128,8 @@ Group.new("@text.note", colors.dirty_green, nil, styles.bold)
 Group.new("@text.warning", colors.light_yellow, nil, styles.bold)
 Group.new("@text.danger", colors.red:light(), nil, styles.bold)
 Group.new("@text.underline", colors.white, nil, styles.underline)
-Group.new("@text.diff.add", colors.white, colors.dirty_green:dark(), nil)
-Group.new("@text.diff.delete", colors.white, colors.dark_red, nil)
+Group.new("@text.diff.add", colors.green, nil, nil)
+Group.new("@text.diff.delete", colors.red, nil, nil)
 -- }}}
 --------------------------------------------------------------------------------
 
