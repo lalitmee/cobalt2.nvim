@@ -5,11 +5,10 @@ local styles = require("cobalt2.utils").styles
 --------------------------------------------------------------------------------
 --  NOTE: general {{{
 --------------------------------------------------------------------------------
-Group.new("TelescopeBorder", colors.yellow, nil, nil)
+Group.new("TelescopeBorder", colors.blue, nil, nil)
 Group.new("TelescopeMatching", colors.yellow, nil, nil)
 Group.new("TelescopeMultiSelection", colors.dark_pink, nil, nil)
 Group.new("TelescopeNormal", colors.white, nil, nil)
-Group.new("TelescopePreviewBorder", colors.blue, nil, nil)
 Group.new("TelescopeSelection", colors.blue, colors.cursor_hover, nil)
 Group.new("TelescopeSelectionCaret", colors.yellow, colors.cursor_hover, nil)
 -- }}}
@@ -22,6 +21,15 @@ Group.new("TelescopePrompt", colors.yellow, nil, nil)
 Group.new("TelescopePromptBorder", colors.blue, nil, nil)
 Group.new("TelescopePromptCounter", colors.light_grey, nil, nil)
 Group.new("TelescopePromptPrefix", colors.dark_orange, nil, nil)
+Group.new("TelescopePromptTitle", colors.yellow, nil, nil)
+-- }}}
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--  NOTE: preview {{{
+--------------------------------------------------------------------------------
+Group.new("TelescopePreviewBorder", colors.blue, nil, nil)
+Group.new("TelescopePreviewTitle", colors.yellow, nil, nil)
 -- }}}
 --------------------------------------------------------------------------------
 
