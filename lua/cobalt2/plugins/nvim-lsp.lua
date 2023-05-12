@@ -60,6 +60,9 @@ Group.new("LspReferenceWrite", nil, colors.cursor_hover, nil)
 Group.new("LspFloatWinNormal", colors.yellow, colors.cobalt_bg, nil)
 Group.new("LspSignatureActiveParameter", colors.light_blue, nil, nil)
 
+-- info window
+Group.new("LspInfoBorder", colors.blue, nil, nil)
+
 --------------------------------------------------------------------------------
 --  nvim-0.9 changes
 --------------------------------------------------------------------------------
