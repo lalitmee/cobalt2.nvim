@@ -40,7 +40,7 @@ Group.new("@function.macro", colors.light_orange, nil, nil)
 Group.new("@method", colors.dark_orange, nil, nil)
 Group.new("@method.call", colors.dark_orange, nil, nil)
 
-Group.new("@constructor", colors.white, nil, nil)
+Group.new("@constructor", colors.purple, nil, nil)
 Group.new("@parameter", colors.white, nil, nil)
 Group.new("@parameter.reference", colors.light_orange, nil, nil)
 -- }}}
@@ -107,9 +107,9 @@ Group.new("@punctuation.special", colors.dark_pink, nil, nil)
 --------------------------------------------------------------------------------
 --  NOTE: tags {{{
 --------------------------------------------------------------------------------
-Group.new("@tag", colors.yellow, nil, nil)
-Group.new("@tag.attribute", colors.yellow, nil, styles.italic)
-Group.new("@tag.delimiter", colors.dirty_blue, nil, nil)
+Group.new("@tag", colors.purple, nil, nil)
+Group.new("@tag.attribute", colors.dark_pink, nil, styles.italic)
+Group.new("@tag.delimiter", colors.blue, nil, nil)
 -- }}}
 --------------------------------------------------------------------------------
 
