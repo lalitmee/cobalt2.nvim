@@ -75,7 +75,7 @@ Group.new("@type", colors.yellow, nil, nil)
 Group.new("@type.builtin", colors.yellow, nil, nil)
 
 Group.new("@attribute", colors.yellow, nil, nil)
-Group.new("@field", colors.white, nil, nil)
+Group.new("@field", colors.light_blue, nil, styles.italic)
 Group.new("@property", colors.light_blue, nil, styles.italic)
 -- }}}
 --------------------------------------------------------------------------------
