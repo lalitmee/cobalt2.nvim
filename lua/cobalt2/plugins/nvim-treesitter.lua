@@ -38,7 +38,7 @@ Group.new("@function.builtin", colors.light_pink, nil, nil)
 Group.new("@function.macro", colors.light_orange, nil, nil)
 
 Group.new("@method", colors.dark_orange, nil, nil)
-Group.new("@method.call", colors.dark_orange, nil, nil)
+Group.new("@method.call", colors.dark_orange, nil, styles.italic)
 
 Group.new("@constructor", colors.purple, nil, nil)
 Group.new("@parameter", colors.white, nil, nil)
