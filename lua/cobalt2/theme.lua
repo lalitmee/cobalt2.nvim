@@ -5,6 +5,7 @@ local Group = require("cobalt2.utils").Group
 Group.new("ColorColumn", nil, colors.dark_grey, nil)
 Group.new("CommandMode", colors.black, colors.darker_blue, nil)
 Group.new("Conceal", colors.dark_grey, nil, nil)
+Group.new("CurSearch", colors.black, colors.yellow, styles.NONE)
 Group.new("Cursor", colors.yellow, colors.cobalt_bg, nil)
 Group.new("CursorColumn", nil, colors.cursor_hover, nil)
 Group.new("CursorIM", colors.yellow, colors.cobalt_bg, nil)
