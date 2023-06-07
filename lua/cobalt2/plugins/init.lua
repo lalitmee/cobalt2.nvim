@@ -5,6 +5,7 @@
 
 require("cobalt2/plugins/barbar")
 require("cobalt2/plugins/barbecue")
+require("cobalt2/plugins/bqf")
 require("cobalt2/plugins/bufferline")
 require("cobalt2/plugins/coc")
 require("cobalt2/plugins/diffview")
