@@ -2,4 +2,4 @@ local utils = require("cobalt2/utils")
 
 local Group, colors = utils.Group, utils.colors
 
-Group.new("BqfPreviewCursor", colors.black, colors.yellow, nil)
+Group.new("NoiceCursor", colors.cobalt_bg, colors.yellow, nil)
