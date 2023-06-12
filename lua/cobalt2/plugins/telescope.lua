@@ -21,7 +21,7 @@ Group.new("TelescopePrompt", colors.yellow, nil, nil)
 Group.new("TelescopePromptBorder", colors.blue, nil, nil)
 Group.new("TelescopePromptCounter", colors.light_grey, nil, nil)
 Group.new("TelescopePromptPrefix", colors.dark_orange, nil, nil)
-Group.new("TelescopePromptTitle", colors.yellow, nil, nil)
+Group.new("TelescopePromptTitle", colors.yellow, colors.cursor_hover, nil)
 -- }}}
 --------------------------------------------------------------------------------
 
@@ -29,7 +29,7 @@ Group.new("TelescopePromptTitle", colors.yellow, nil, nil)
 --  NOTE: preview {{{
 --------------------------------------------------------------------------------
 Group.new("TelescopePreviewBorder", colors.blue, nil, nil)
-Group.new("TelescopePreviewTitle", colors.yellow, nil, nil)
+Group.new("TelescopePreviewTitle", colors.yellow, colors.cursor_hover, nil)
 -- }}}
 --------------------------------------------------------------------------------
 
@@ -48,7 +48,7 @@ Group.new("TelescopeResultsNumber", colors.dark_pink, nil, nil)
 Group.new("TelescopeResultsOperator", colors.light_blue, nil, styles.italic)
 Group.new("TelescopeResultsSpecialComment", colors.blue, nil, styles.italic)
 Group.new("TelescopeResultsStruct", colors.light_orange, nil, styles.italic)
-Group.new("TelescopeResultsTitle", colors.yellow, nil, nil)
+Group.new("TelescopeResultsTitle", colors.yellow, colors.cursor_hover, nil)
 Group.new("TelescopeResultsVariable", colors.light_green, nil, styles.italic)
 -- }}}
 --------------------------------------------------------------------------------
