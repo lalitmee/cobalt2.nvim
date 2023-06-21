@@ -16,37 +16,17 @@ Group.new("LspDiagnosticsDefaultHint", colors.light_pink, nil, nil)
 Group.new("LspDiagnosticsDefaultInformation", colors.blue, nil, nil)
 Group.new("LspDiagnosticsDefaultWarning", colors.light_yellow, nil, nil)
 Group.new("LspDiagnosticsError", colors.red:light(), nil, nil)
-Group.new(
-    "LspDiagnosticsErrorUnderline",
-    colors.red:light(),
-    nil,
-    styles.underline
-)
+Group.new("LspDiagnosticsErrorUnderline", colors.red:light(), nil, styles.underline)
 Group.new("LspDiagnosticsHint", colors.light_pink, nil, nil)
-Group.new(
-    "LspDiagnosticsHintUnderline",
-    colors.light_pink,
-    nil,
-    styles.underline
-)
+Group.new("LspDiagnosticsHintUnderline", colors.light_pink, nil, styles.underline)
 Group.new("LspDiagnosticsInformation", colors.blue, nil, nil)
-Group.new(
-    "LspDiagnosticsInformationUnderline",
-    colors.blue,
-    nil,
-    styles.underline
-)
+Group.new("LspDiagnosticsInformationUnderline", colors.blue, nil, styles.underline)
 Group.new("LspDiagnosticsVirtualTextError", colors.red:light(), nil, nil)
 Group.new("LspDiagnosticsVirtualTextHint", colors.light_pink, nil, nil)
 Group.new("LspDiagnosticsVirtualTextInformation", colors.blue, nil, nil)
 Group.new("LspDiagnosticsVirtualTextWarning", colors.light_yellow, nil, nil)
 Group.new("LspDiagnosticsWarning", colors.light_yellow, nil, nil)
-Group.new(
-    "LspDiagnosticsWarningUnderline",
-    colors.light_yellow,
-    nil,
-    styles.underline
-)
+Group.new("LspDiagnosticsWarningUnderline", colors.light_yellow, nil, styles.underline)
 
 -- codelens
 Group.new("LspCodeLens", colors.dark_grey, nil, nil)
@@ -62,6 +42,9 @@ Group.new("LspSignatureActiveParameter", colors.light_blue, nil, nil)
 
 -- info window
 Group.new("LspInfoBorder", colors.blue, nil, nil)
+
+-- inlay hints
+Group.new("LspInlayHint", colors.dark_grey, nil, styles.italic)
 
 --------------------------------------------------------------------------------
 --  nvim-0.9 changes
