@@ -72,7 +72,7 @@ cobalt2 theme for neovim in lua using [tjdevries/colorbuddy](https://github.com/
 {
     "lalitmee/cobalt2.nvim",
     event = { "ColorSchemePre" }, -- if you want to lazy load
-    dependencies = { { commit = "cdb5b0654d3cafe61d2a845e15b2b4b0e78e752a", "tjdevries/colorbuddy.nvim" } }, -- Pin colorbuddy to v1
+    dependencies = { "tjdevries/colorbuddy.nvim", tag = "v1.0.0" },
     init = function()
         require("colorbuddy").colorscheme("cobalt2")
     end,
