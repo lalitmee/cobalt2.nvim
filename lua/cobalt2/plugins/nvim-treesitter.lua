@@ -50,12 +50,7 @@ Group.new("@parameter.reference", colors.light_orange, nil, nil)
 --  NOTE: keywords {{{
 --------------------------------------------------------------------------------
 Group.new("@keyword", colors.light_pink, nil, styles.bold + styles.italic)
-Group.new(
-    "@keyword.function",
-    colors.light_pink,
-    nil,
-    styles.bold + styles.italic
-)
+Group.new("@keyword.function", colors.light_pink, nil, styles.bold + styles.italic)
 Group.new("@keyword.operator", colors.yellow, nil, nil)
 Group.new("@keyword.return", colors.dark_pink, nil, styles.bold + styles.italic)
 
@@ -92,6 +87,7 @@ Group.new("@constant.macro", colors.light_blue, nil, nil)
 
 Group.new("@namespace", colors.white, nil, styles.italic)
 Group.new("@symbol", colors.white, nil, styles.italic)
+Group.new("@module", colors.yellow, nil, nil)
 -- }}}
 --------------------------------------------------------------------------------
 
