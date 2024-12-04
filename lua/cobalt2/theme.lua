@@ -2,7 +2,7 @@ local colors = require("cobalt2.utils").colors
 local styles = require("cobalt2.utils").styles
 local Group = require("cobalt2.utils").Group
 
-Group.new("ColorColumn", nil, colors.darker_blue, nil)
+Group.new("ColorColumn", nil, colors.cursor_line, nil)
 Group.new("CommandMode", colors.black, colors.darker_blue, nil)
 Group.new("Conceal", colors.dark_grey, nil, nil)
 Group.new("CurSearch", colors.black, colors.yellow, styles.NONE)
@@ -38,7 +38,7 @@ Group.new("PMenuSBar", nil, colors.dark_grey, nil)
 Group.new("PMenuSel", colors.black, colors.yellow, nil)
 Group.new("PMenuThumb", nil, colors.lightest_grey, nil)
 Group.new("Question", colors.green, nil, nil)
-Group.new("QuickFixLine", colors.yellow, colors.cursor_hover, nil)
+Group.new("QuickFixLine", nil, colors.cursor_hover, nil)
 Group.new("ReplacelMode", colors.black, colors.dark_pink, nil)
 Group.new("Search", colors.black, colors.blue, styles.NONE)
 Group.new("SignColumn", colors.cobalt_bg, nil, nil)

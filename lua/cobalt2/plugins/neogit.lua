@@ -4,10 +4,11 @@ local Group = require("cobalt2.utils").Group
 
 Group.new("NeogitDiffAddHighlight", colors.green, nil, nil)
 Group.new("NeogitDiffAddRegion", colors.green, nil, nil)
-Group.new("NeogitDiffContextHighlight", nil, colors.cobalt_bg:light(), nil)
+Group.new("NeogitDiffContextHighlight", nil, nil, nil)
 Group.new("NeogitDiffDeleteHighlight", colors.red, nil, nil)
 Group.new("NeogitDiffDeleteRegion", colors.red, nil, nil)
-Group.new("NeogitHunkHeaderHighlight", colors.blue, nil, nil)
+Group.new("NeogitHunkHeaderHighlight", colors.yellow, colors.cursor_hover, styles.bold)
+Group.new("NeogitHunkHeaderCursor", colors.white, colors.blue, styles.bold)
 
 -- status buffer
 Group.new("NeogitBranch", colors.green, nil, nil)
@@ -21,7 +22,7 @@ Group.new("NeogitTagName", colors.yellow, nil, nil)
 Group.new("NeogitTagDistance", colors.dark_orange, nil, nil)
 
 -- status and commit buffer
-Group.new("NeogitHunkHeader", colors.blue, nil, nil)
+Group.new("NeogitHunkHeader", colors.yellow, colors.cursor_hover, styles.bold)
 Group.new("NeogitDiffContext", nil, colors.cobalt_bg, nil)
 Group.new("NeogitDiffDelete", colors.red, nil, nil)
 Group.new("NeogitDiffHeader", colors.blue, nil, nil)
