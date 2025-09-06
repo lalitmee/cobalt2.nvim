@@ -95,6 +95,16 @@ local colors = {
     cursor_hover = "#185294",
     -- }}}
     --------------------------------------------------------------------------------
+
+    --------------------------------------------------------------------------------
+    --  NOTE: render-markdown subtle backgrounds {{{
+    --------------------------------------------------------------------------------
+    -- Extremely subtle background colors for render-markdown plugin
+    -- These are very close to cobalt_bg with barely visible tints
+    subtle_bg = "#0e4062", -- Slightly lighter than cobalt_bg for subtle backgrounds
+    subtle_default = "#19364a", -- Default subtle background
+    -- }}}
+    --------------------------------------------------------------------------------
 }
 
 return colors

@@ -18,6 +18,7 @@ Color.new("light_grey", palette.light_grey)
 Color.new("lighter_grey", palette.lighter_grey)
 Color.new("lightest_grey", palette.lightest_grey)
 Color.new("white", palette.white)
+Color.new("cobalt_bg", palette.cobalt_bg)
 Color.new("dark_orange", palette.dark_orange)
 Color.new("light_orange", palette.light_orange)
 Color.new("yellow", palette.yellow)
@@ -31,7 +32,6 @@ Color.new("lightest_green", palette.lightest_green)
 Color.new("dark_purple", palette.dark_purple)
 Color.new("purple", palette.purple)
 Color.new("light_purple", palette.light_purple)
-Color.new("cobalt_bg", palette.cobalt_bg)
 Color.new("darkest_blue", palette.darkest_blue)
 Color.new("darker_blue", palette.darker_blue)
 Color.new("dark_blue", palette.dark_blue)
@@ -51,6 +51,10 @@ Color.new("pale_pink", palette.pale_pink)
 Color.new("dirty_pink", palette.dirty_pink)
 Color.new("cursor_line", palette.cursor_line)
 Color.new("cursor_hover", palette.cursor_hover)
+
+-- Subtle background colors for render-markdown
+Color.new("subtle_bg", palette.subtle_bg)
+Color.new("subtle_default", palette.subtle_default)
 -- }}}
 --------------------------------------------------------------------------------
 
